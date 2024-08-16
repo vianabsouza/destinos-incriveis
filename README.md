@@ -11,9 +11,6 @@ Nosso objetivo é proporcionar aos clientes uma plataforma de viagens que ofere�
 ## Tecnologias
 [![Tecnologias](https://skillicons.dev/icons?i=figma,html,css,js,git)](https://skillicons.dev)
 
-## Demo
-[Veja o vídeo](./src/demo/demo-viagens-incriveis.mp4)
-
 ## Autores
 <table>
   <tr>
