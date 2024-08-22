@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta  charset =" UTF-8 ">
+    <meta name="viewport" content="largura=largura-do-dispositivo, escala-inicial=1.0">
+    <title>Agência de Viagem</title>
+    <link rel="folha de estilo" href="../header/header.css">
+    <title>Agência de Viagens</title>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="https://raw.githubusercontent.com/vianabsouza/destinos-incriveis/4e3c47768cc0cffa69c57fe80447eebf0cd6e726/src/pages/header/logo-2.png" alt="Logo">
+        </div>
+        <nav class="nav-links">
+            <a href="#"class="active">Home</a>
+            <a href="#">Quem somos</a>
+            <a href="#">Voos</a>
+            <a href="#">Promoções</a>
+            <a href="#">Reviews</a>
+            <a href="#">Contato</a>
+        </nav>
+        <div class="user-menu">
+            <button class="dropdown-btn">▼</button>
+            <img src="data:image/png;base64,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" alt="User Icon" class="user-icon">
+        </div>
+    </header>
+    
+    <div class="tela">
+        <div class="texto">
+            Procurando uma viagem?<br>
+              Conta com a gente!
+        </div>
+        <div class="btn-container">
+            <button class="btn">Veja nossas ofertas</button>
+        </div>
+    </div>
+    
+
+    <section class="voo">
+        <h1>Orçamento Baixo?</h1>
+        <p>Não se preocupe! Temos promoções que cabem no seu bolso!</p>
+        <div class="container">
+            <div class="card">
+              <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2019/07/passagens-aereas-foz-do-iguacu-capa2019-05.jpg" alt="Foz do Iguaçu">
+              <div class="card-body">
+                <h3 class="card-title">Foz do Iguaçu - PR</h3>
+                <br>
+                <div class="card-text">01 Ago 2024 - 10 Ago 2024 </div>
+                <br>
+                <div class="card-text1">De R$ 800,00</div>
+                <div class="card-text1">Por apenas:</div>
+                <br>
+                <div class="card-price">R$ 650,00</div>
+                <button class="card-button">Pacote</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://jpimg.com.br/uploads/2023/05/turismo-no-rio-de-janeiro-veja-o-que-visitar-na-cidade-maravilhosa.jpg" alt="Rio de Janeiro">
+              <div class="card-body">
+                <h3 class="card-title">Rio de Janeiro - RJ</h3>
+                <br>
+                <div class="card-text">05 Ago 2024 - 10 Ago 2024</div>
+                <br>
+                <div class="card-text1">De R$ 1200,00</div>
+                <div class="card-text1">Por apenas:</div>
+                <br>
+                <div class="card-price">R$ 900,00</div>
+                <button class="card-button">Pacote</button> 
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://blog.123milhas.com/wp-content/uploads/2023/11/o-que-fazer-em-recife-marco-zero-conexao123.jpg" alt="Recife">
+              <div class="card-body">
+                <h3 class="card-title">Recife - PE</h3>
+                <br>
+                <div class="card-text"> 28 Jul 2024 - 03 Ago 2024</div>
+                <br>
+                <div class="card-text1">De R$ 1000,00</div>
+                <div class="card-text1">Por apenas:</div>
+                <br>
+                <div class="card-price">R$ 800,00</div>
+                <button class="card-button">Pacote</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://www.zapimoveis.com.br/blog/wp-content/uploads/2024/01/melhores-praias-de-fortaleza-stock-thumb-zap.jpg.webp" alt="Fortaleza">
+              <div class="card-body">
+                <h3 class="card-title">Fortaleza - CE</h3>
+                <br>
+                <div class="card-text">07 Ago 2024 - 14 Ago 2024 </div>
+                <br>
+                <div class="card-text1">De R$ 900,00</div>
+                <div class="card-text1">Por apenas:</div>
+                <br>
+                <div class="card-price">R$ 699,99</div>
+                <button class="card-button">Pacote</button>
+              </div>
+            </div>
+          </div>
+      </section>
+      <button class="card-buttonn">Ver mais destinos</button>
+
+      <section class="veja">
+         <div class="veja-titulo">
+             <h2>Te levando ao seu próximo destino!</h2>
+         </div>
+         <div class="veja-frase">
+             <p>Saiba mais sobre nossa agência de viagens.</p>
+         </div>
+         <div><button class="veja-butao">Veja quem somos</button></div>
+      </section> 
+    
+
+    <section class="section">
+        <h2>O que nossos clientes acham?</h2>
+        <div class="review">
+            <div class="avatar">
+                <img src="https://images.suamusica.com.br/VONe39ATfiNKpbOTwZ0ZPokWKF8=/500x500/filters:format(webp)/49091608/3331189/cd_cover.jpg" alt="Foto do cliente">
+            </div>
+            <div class="name">Tiringa</div>
+            <div class="stars">
+                <span class="star">★★★★★</span>
+            </div>
+            <div class="text">
+               Pode atolar o dedo, eu fiquei impressionado! Os preços são super em conta e cabem no bolso de qualquer um. Eu consegui fazer uma viagem incrível sem gastar uma fortuna. Eles têm pacotes para todos os gostos e bolsos, e o melhor de tudo é que não tem pegadinha. O preço que eles te passam é o preço final, sem surpresas desagradáveis.
+            </div>
+          </div>
+          <div class="review">
+            <div class="avatar">
+                <img src="https://ugc.production.linktr.ee/rZlnJ9EQbu9XLFWCSQwf_cWZ1cWBSA6Q3d0ph?io=true&size=avatar-v3_0" alt="Foto do cliente">
+            </div>
+            <div class="name">Luiz do Som</div>
+            <div class="stars">
+                <span class="star">★★★★★</span>
+            </div>
+            <div class="text">
+              "Oh beleza"
+            </div>
+          </div>
+        <button class="btnn">Veja mais reviews</button>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-wave">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#4B9CD3" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,224C384,224,480,256,576,245.3C672,235,768,181,864,170.7C960,160,1056,192,1152,192C1248,192,1344,160,1392,144L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        </div>
+        <div class="footer-content">
+            <div class="social">
+                <h3>Siga-nos!</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="x-icon.png" alt="X"></a>
+                    <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                </div>
+            </div>
+            <div class="contact">
+                <h3>Contate-nos!</h3>
+                <div class="contact-icons">
+                    <a href="#"><img src="email-icon.png" alt="Email"></a>
+                    <a href="#"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2024 Destinos Incríveis | Desenvolvido pelo Grupo 3 - TC31</p>
+            </div>
+        </div>
+    </footer>    
+</body>
+</html>
