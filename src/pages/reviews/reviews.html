@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voos</title>
+    <!--estilos da pagina-->
+
+    <link rel="stylesheet" href="voos.css">
+
+     <!--favicon-->
+    <link rel="shortcut icon" href="img/logo-1.png" type="image/png">
+    
+</head>
+<body>
+    <header>    
+        <!-- Logo à esquerda -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo-2.png" alt="Destinos Incríveis Logo">
+            </a>
+        </div>
+        <!-- Menu central -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quem-somos.html">Quem Somos</a></li>
+                <li><a href="voos.html">Voos</a></li>
+                <li><a href="promocoes.html">Promoções</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <!-- Área de login à direita -->
+        <div class="login-area">
+            <a href="login.html">
+                <img src="src/img/user-icon.png" alt="Ícone de Login"> <!-- Ícone de usuário -->
+            </a>
+            <a href="login.html">Login</a>
+        </div>        
+
+    </header>
+    <!-- Imagem banner -->
+    <div class="imagem-container">
+        <img src="img/Reviews Banner.png" alt="img-banner" class="imagem-expandida">
+        <div class="texto-sobreposto">
+            <h2>Confiança e conforto em toda viagem!</h2>
+            <h4>Veja algumas avaliações sobre nossa agência.</h4>
+           
+        </div>
+    </div>
+   
+     <!-- Conteúdo da página Reviews -->
+     <div class="content">
+        <h1>O que os clientes estão falando</h1>
+        <div class="review-carousel">
+            <div class="slides">
+                <div class="slide">
+                    <div class="review-item">
+                        <h3>Excelente Serviço!</h3>
+                        <p>“Fizemos uma viagem incrível com a ajuda desta agência. Tudo foi perfeito, desde a reserva até o atendimento durante a viagem.”</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="review-item">
+                        <h3>Uma Experiência Inesquecível</h3>
+                        <p>“A viagem foi maravilhosa e superou todas as nossas expectativas. Recomendo a todos que procuram uma experiência de viagem de qualidade.”</p>
+                    </div>
+                </div>
+                <!-- Seção de  slides  -->
+            </div>
+            <div class="controls">
+                <button class="control prev">❮</button>
+                <button class="control next">❯</button>
+            </div>
+        </div>
+
+        <!-- Seção de Avaliação -->
+        <div class="feedback-section">
+            <h2>Viajou com a gente? <br> Avalie-nos!</h2>
+            <h4>Conecte com sua conta e deixe sua avaliação :)</h4>
+            <div class="rating-stars">
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5">★</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">★</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">★</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">★</label>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1">★</label>
+            </div>
+            <div class="feedback-message">
+                <textarea placeholder="Deixe sua mensagem aqui"></textarea>
+                <button type="button">Enviar</button>
+            </div>
+        </div>
+    </div>
+    
+    
+    <footer>
+        Copyright &copy; 2024 Destinos Incriveis | &reg; Desenvolvido pelo Grupo 3-TC31
+    </footer> 
+    
+</body>
+</html>
