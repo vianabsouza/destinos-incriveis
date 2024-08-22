@@ -1,0 +1,32 @@
+footer {
+    background: linear-gradient(to bottom, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .follow-us, .contact-us {
+    display: flex;
+    align-items: center;
+  }
+  
+  .follow-us p, .contact-us p {
+    margin-right: 10px;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #fff;
+    padding-top: 10px;
+  }
+  
+  .icon-globe, .icon-envelope, .icon-facebook, .icon-phone {
+    margin: 0 5px;
+    font-size: 24px;
+  }
+  
