@@ -3,42 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voos</title>
+    <title>Reviews</title>
     <!--estilos da pagina-->
 
     <link rel="stylesheet" href="voos.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="../header/header.css">
 
-     <!--favicon-->
+    <!--favicon-->
     <link rel="shortcut icon" href="img/logo-1.png" type="image/png">
-    
+        
 </head>
 <body>
-    <header>    
-        <!-- Logo à esquerda -->
+    <header class="navbar">
         <div class="logo">
-            <a href="index.html">
-                <img src="img/logo-2.png" alt="Destinos Incríveis Logo">
-            </a>
+            <img src="../header/logo-2.png" alt="Logo">
         </div>
-        <!-- Menu central -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="quem-somos.html">Quem Somos</a></li>
-                <li><a href="voos.html">Voos</a></li>
-                <li><a href="promocoes.html">Promoções</a></li>
-                <li><a href="reviews.html">Reviews</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
+        <nav class="nav-links">
+            <a href="#"class="active">Inicio</a>
+            <a href="#">Quem somos</a>
+            <a href="#">Voos</a>
+            <a href="#">Promoções</a>
+            <a href="#">Reviews</a>
+            <a href="#">Contato</a>
         </nav>
-        <!-- Área de login à direita -->
-        <div class="login-area">
-            <a href="login.html">
-                <img src="src/img/user-icon.png" alt="Ícone de Login"> <!-- Ícone de usuário -->
-            </a>
-            <a href="login.html">Login</a>
-        </div>        
-
+        <div class="user-menu">
+            <button class="dropdown-btn">▼</button>
+            <img src="user.png" alt="User Icon" class="user-icon">
+        </div>
     </header>
     <!-- Imagem banner -->
     <div class="imagem-container">
@@ -99,9 +91,31 @@
     </div>
     
     
-    <footer>
-        Copyright &copy; 2024 Destinos Incriveis | &reg; Desenvolvido pelo Grupo 3-TC31
-    </footer> 
+    <footer class="footer">
+        <div class="footer-wave">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#4B9CD3" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,224C384,224,480,256,576,245.3C672,235,768,181,864,170.7C960,160,1056,192,1152,192C1248,192,1344,160,1392,144L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        </div>
+        <div class="footer-content">
+            <div class="social">
+                <h3>Siga-nos!</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="x-icon.png" alt="X"></a>
+                    <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                </div>
+            </div>
+            <div class="contact">
+                <h3>Contate-nos!</h3>
+                <div class="contact-icons">
+                    <a href="#"><img src="email-icon.png" alt="Email"></a>
+                    <a href="#"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2024 Destinos Incríveis | Desenvolvido pelo Grupo 3 - TC31</p>
+            </div>
+        </div>
+    </footer>   
     
 </body>
 </html>
