@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login/Cadastro</title>
+    <link rel="stylesheet" href="./login-cadastro.css">
 </head>
 <body>
     <main>
-
-        <section id="loginSection">
-            <img src="/src/img/logo-2.png" width="300" height="300" alt="Logo da Destinos Incríveis">
-            <form action="#">
+        <img src="/src/img/logo-2.png" class="logo" alt="Logo da Destinos Incríveis">
+        <section id="loginSection" class="enter-section">
+            <div class="changeFormButtons">
+                <button class="loginPageBtn" >Entrar</button>
+                <div class="v-line"></div>
+                <button class="signUpPageBtn">Cadastro</button>
+            </div>
+            <div class="selectedLogin"></div>
+            <form action="#" class="form">
                 <div>
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email">
@@ -19,13 +25,35 @@
                     <label for="password">Senha</label>
                     <input type="password" id="password" name="password">
                 </div>
-                <button type="submit">Entrar</button>
+                <div class="rememberMeBtn">
+                    <input type="checkbox" name="rememberMe" id="rememberMe">
+                    <label for="rememberMe">Lembrar-me</label>
+                    <a href="#">Esqueceu sua senha?</a>
+                </div>
+                <div class="submitButton">
+                    <button type="submit">Entrar</button>
+                </div>
             </form>
+            <div class="or">
+                <hr><p>OU</p><hr>
+            </div>
+            <div class="googleLogin">
+                <button>
+                    <img src="../../img/login-cadastro/google.png" alt="Logo do Google">
+                    <p>Continuar com o Google</p>
+                </button>
+            </div>
         </section>
 
-        <section id="sign-up-section">
-            <img src="/src/img/logo-2.png" width="300" height="300" alt="Logo da Destinos Incríveis">
-            <form action="#">
+        <section id="signUpSection" class="enter-section disabled">
+            <div class="changeFormButtons">
+                <button class="loginPageBtn">Entrar</button>
+                <div class="v-line"></div>
+                <button class="signUpPageBtn">Cadastro</button>
+            </div>
+            <div id="selected-sign-in"></div>
+            
+            <form action="#" class="form">
                 <div>
                     <label for="name">Nome</label>
                     <input type="text" id="name" name="name">
@@ -46,8 +74,19 @@
                     <label for="passwordCheck">Repita sua senha</label>
                     <input type="password" id="passwordCheck" name="passwordCheck">
                 </div>
-                <button type="submit">Criar Conta</button>
+                <div class="submitButton">
+                    <button type="submit">Criar Conta</button>
+                </div>
             </form>
+            <div class="or">
+                <hr><p>OU</p><hr>
+            </div>
+            <div class="googleLogin">
+                <button>
+                    <img src="../../img/login-cadastro/google.png" alt="Logo do Google">
+                    <p>Continuar com o Google</p>
+                </button>
+            </div>
         </section>
 
     </main>
@@ -76,5 +115,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="./login-cadastro.js"></script>
 </body>
 </html>
