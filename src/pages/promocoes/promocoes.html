@@ -3,7 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <title>Destinos Incríveis - Promoções</title>
+  <link rel="stylesheet" href="promocoes.css">
+  <link rel="stylesheet" href="../header/header.css">
+   <link rel="stylesheet" href="../footer/footer.css">
+  <script></script>
 </head>
 <body>
   <header class="navbar">
@@ -24,146 +31,238 @@
     </div>
   </header>
   <section>
-    <img src="../../img/promocoes/banner.png" alt="Mulher segurando um mapa">
-    <h1>Explore o mundo com descontos exclusivos!</h1>
-    <p>Não se preocupe! Temos promoções que cabem no seu bolso</p>
+    <div class="banner">
+      <img class="banner-image" src="../../img/promocoes/banner.png" alt="Mulher segurando um mapa">
+      <h1 class="banner-heading">Explore o mundo com descontos exclusivos!</h1>
+      <p class="banner-paragraph">Não se preocupe! Temos promoções que cabem no seu bolso!</p>
+    </div>
   </section>
   <main>
     <section>
-      <p>
-        Aqui você encontra uma seleção exclusiva de pacotes nacionais e internacionais, cuidadosamente planejados para oferecer experiências inesquecíveis, seja explorando as belezas do Brasil ou desbravando destinos ao redor do mundo. Descubra a viagem dos seus sonhos com os melhores preços e a qualidade que você merece.
-      </p>
-      <img src="../../img/promocoes/icone-mala.png" alt="Ícone prateado de uma mala de viagem">
-      <img src="../../img/promocoes/icone-terra.png" alt="ícone prateado do planeta terra">
-      <img src="../../img/promocoes/icone-aviao.png" alt="ícone prateado de um avião">
+      <div class="intro">
+        <p class="intro-paragraph">
+          Aqui você encontra uma seleção exclusiva de pacotes nacionais e internacionais, cuidadosamente planejados para oferecer experiências inesquecíveis, seja explorando as belezas do Brasil ou desbravando destinos ao redor do mundo. Descubra a viagem dos seus sonhos com os melhores preços e a qualidade que você merece.
+        </p>
+        <img src="../../img/promocoes/icone-mala.png" alt="Ícone prateado de uma mala de viagem">
+        <img src="../../img/promocoes/icone-terra.png" alt="ícone prateado do planeta terra">
+        <img src="../../img/promocoes/icone-aviao.png" alt="ícone prateado de um avião">
+      </div>
     </section>
     <section>
       <h2>Promoções internacionais</h2>
-      <div>
-        <div>
-          <button>
-            <img src="../../img/promocoes/seta-esquerda.png" alt="Seta do carrossel para esquerda">
-          </button>
-          <div>
-            <img src="../../img/promocoes/miami.png" alt="Imagem de Miami">
-            <p>Pacote</p>
-            <p>Miami - EUA</p>
-            <img src="../../img/promocoes/icone-preto-aviao.png" alt="Ícone preto de um avião">
-            <span>25 Ago. 2024 - 30 Ago. 2024</span>
-            <p>De R$ 2.396,00</p>
-            <p>Por apenas: R$ 2.150,00</p>
+      <div class="carousel">
+        <div class="carousel-container">
+          <div class="card">
+            <div class="card-image">
+              <span class="card-type">Pacote</span>
+              <img src="../../img/promocoes/miami.png" alt="Imagem de Miami">
+            </div>
+            <div class="card-info">
+              <div class="card-info-wrapper">
+                <h3>Miami - EUA</h3>
+                <div class="date-info">
+                  <img class="icon-plane" src="../../img/promocoes/icone-preto-aviao.png" alt="Ícone preto de um avião">
+                  <span class="date">25 Ago. 2024 - 30 Ago. 2024</span>
+                </div>
+                <div class="price-info">
+                  <p>De<span class="actual-price">R$ 2.396,00</span></p>
+                  <p>Por apenas:</p>
+                  <span class="price">R$ 2.150,00</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div>
-            <img src="../../img/promocoes/buenos-aires.png" alt="Imagem de Buenos Aires">
-            <p>Pacote</p>
-            <p>Buenos Aires - ARG</p>
-            <img src="../../img/promocoes/icone-preto-aviao.png" alt="Ícone preto de um avião">
-            <span>20 Ago. 2024 - 25 Ago. 2024</span>
-            <p>De R$ 2.224,00</p>.
-            <p>Por apenas: 1.600,00R$</p>
+          <div class="card">
+            <div class="card-image">
+              <span class="card-type">Pacote</span>
+              <img src="../../img/promocoes/buenos-aires.png" alt="Imagem de Buenos Aires">
+            </div>
+            <div class="card-info">
+              <div class="card-info-wrapper">
+                <h3>Buenos Aires - ARG</h3>
+                <div class="date-info">
+                  <img class="icon-plane" src="../../img/promocoes/icone-preto-aviao.png" alt="Ícone preto de um avião">
+                  <span class="date">20 Ago. 2024 - 25 Ago. 2024</span>
+                </div>
+                <div class="price-info">
+                  <p>De<span class="actual-price">R$ 2.224,00</span></p>
+                  <p>Por apenas:</p>
+                  <span class="price">R$ 1.600,00</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div>
-            <img src="../../img/promocoes/roma.png" alt="Imagem de Roma">
-            <p>Pacote</p>
-            <p>Roma - IT</p>
-            <img src="../../img/promocoes/icone-preto-aviao.png" alt="Ícone preto de um avião">
-            <span>30 Ago. 2024 - 15 Set. 2024</span>
-            <p>De R$ 3.752,00</p>
-            <p>Por apenas: 2.900,00R$ </p>
+          <div class="card">
+            <div class="card-image">
+              <span class="card-type">Pacote</span>
+              <img src="../../img/promocoes/roma.png" alt="Imagem de Roma">
+            </div>
+            <div class="card-info">
+              <div class="card-info-wrapper">
+                <h3>Roma - IT</h3>
+                <div class="date-info">
+                  <img class="icon-plane" src="../../img/promocoes/icone-preto-aviao.png" alt="Ícone preto de um avião">
+                  <span class="date">30 Ago. 2024 - 15 Set. 2024</span>
+                </div>
+                <div class="price-info">
+                  <p>De<span class="actual-price">R$ R$ 3.752,00</span></p>
+                  <p>Por apenas:</p>
+                  <span class="price">R$ 2.900,00</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div>
-            <img src="../../img/promocoes/toronto.png" alt="Imagem de Toronto">
-            <p>Pacote</p>
-            <p>Toronto - CA</p>
-            <img src="../../img/promocoes/icone-preto-aviao.png" alt="Ícone preto de um avião">
-            <span>5 Out. 2024 - 12 Out. 2024</span>
-            <p>De R$ 8.125,00</p>
-            <p>Por apenas: 6.700,00R$ </p>
+          <div class="card">
+            <div class="card-image">
+              <span class="card-type">Pacote</span>
+              <img src="../../img/promocoes/toronto.png" alt="Imagem de Toronto">
+            </div>
+            <div class="card-info">
+              <div class="card-info-wrapper">
+                <h3>Toronto - CA</h3>
+                <div class="date-info">
+                  <img class="icon-plane" src="../../img/promocoes/icone-preto-aviao.png" alt="Ícone preto de um avião">
+                  <span class="date">5 Out. 2024 - 12 Out. 2024</span>
+                </div>
+                <div class="price-info">
+                  <p>De<span class="actual-price">R$ R$ 8.125,00</span></p>
+                  <p>Por apenas:</p>
+                  <span class="price">R$ 6.700,00</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <button>
-            <img src="../../img/promocoes/seta-direita.png" alt="Seta do carrossel para direita">
-          </button>
+        </div>
+        <div class="arrows-btn">
+          <button class="pre-btn"><img src="../../img/promocoes/seta-esquerda.png" alt=""></button>
+          <div class="carousel-indicators"></div>
+          <button class="nxt-btn"><img src="../../img/promocoes/seta-direita.png" alt=""></button>
+          </div>
         </div>
       </div>
     </section>
     <section>
-      <div>
-        <h2>Promoções nacionais</h2>
-      </div>
-      <div>
-        <button>
-          <img src="../../img/promocoes/seta-esquerda.png" alt="Seta do carrossel para esquerda">
-        </button>
-        <div>
-          <img src="../../img/promocoes/fortaleza.png" alt="Imagem de Fortaleza">
-          <p>Pacote</p>
-          <p>Fortaleza - CE</p>
-          <img src="../../img/promocoes/icone-preto-aviao.png" alt="Ícone preto de um avião">
-          <span>25 Ago. 2024 - 30 Ago. 2024</span>
-          <p>De R$ 2.552,00</p>
-          <p>Por apenas: R$ 2.150,00</p>
+      <h2>Promoções nacionais</h2>
+      <div class="carousel">
+        <div class="carousel-container">
+          <div class="card">
+            <div class="card-image">
+              <span class="card-type">Pacote</span>
+              <img src="../../img/promocoes/fortaleza.png" alt="Imagem de Fortaleza">
+            </div>
+            <div class="card-info">
+              <div class="card-info-wrapper">
+                <h3>Fortaleza - CE</h3>
+                <div class="date-info">
+                  <img class="icon-plane" src="../../img/promocoes/icone-preto-aviao.png" alt="Ícone preto de um avião">
+                  <span class="date">25 Ago. 2024 - 30 Ago. 2024</span>
+                </div>
+                <div class="price-info">
+                  <p>De<span class="actual-price">R$ R$ 2.552,00</span></p>
+                  <p>Por apenas:</p>
+                  <span class="price">R$ 2.150,00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <span class="card-type">Pacote</span>
+              <img src="../../img/promocoes/sao-paulo.png" alt="Imagem de São Paulo">
+            </div>
+            <div class="card-info">
+              <div class="card-info-wrapper">
+                <h3>São Paulo - SP</h3>
+                <div class="date-info">
+                  <img class="icon-plane" src="../../img/promocoes/icone-preto-aviao.png" alt="Ícone preto de um avião">
+                  <span class="date">22 Ago. 2024 - 30 Ago. 2024</span>
+                </div>
+                <div class="price-info">
+                  <p>De<span class="actual-price">R$ R$ 1.019,00</span></p>
+                  <p>Por apenas:</p>
+                  <span class="price">R$ 800,00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <span class="card-type">Pacote</span>
+              <img src="../../img/promocoes/rio-de-janeiro.png" alt="Imagem de Rio de Janeiro">
+            </div>
+            <div class="card-info">
+              <div class="card-info-wrapper">
+                <h3>Rio de Janeiro - RJ</h3>
+                <div class="date-info">
+                  <img class="icon-plane" src="../../img/promocoes/icone-preto-aviao.png" alt="Ícone preto de um avião">
+                  <span class="date">18 Ago. 2024 - 21 Ago. 2024</span>
+                </div>
+                <div class="price-info">
+                  <p>De<span class="actual-price">R$ R$ 800,00</span></p>
+                  <p>Por apenas:</p>
+                  <span class="price">R$ 650,00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <span class="card-type">Pacote</span>
+              <img src="../../img/promocoes/minas-gerais.png" alt="Imagem de Minas Gerais">
+            </div>
+            <div class="card-info">
+              <div class="card-info-wrapper">
+                <h3>Minas Gerais - MG</h3>
+                <div class="date-info">
+                  <img class="icon-plane" src="../../img/promocoes/icone-preto-aviao.png" alt="Ícone preto de um avião">
+                  <span class="date">30 Ago. 2024 - 15 Set. 2024</span>
+                </div>
+                <div class="price-info">
+                  <p>De<span class="actual-price">R$ R$ 2.114,00</span></p>
+                  <p>Por apenas:</p>
+                  <span class="price">R$ 1.900,00</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          <img src="../../img/promocoes/sao-paulo.png" alt="Imagem de São Paulo">
-          <p>Pacote</p>
-          <p>São Paulo - SP</p>
-          <img src="../../img/promocoes/icone-preto-aviao.png" alt="Ícone preto de um avião">
-          <span>22 Ago. 2024 - 30 Ago. 2024</span>
-          <p>De R$ 1.019,00</p>
-          <p>Por apenas: R$ 800,00</p>
+        <div class="arrows-btn">
+          <button class="pre-btn"><img src="../../img/promocoes/seta-esquerda.png" alt=""></button>
+          <div class="carousel-indicators"></div>
+          <button class="nxt-btn"><img src="../../img/promocoes/seta-direita.png" alt=""></button>
+          </div>
         </div>
-        <div>
-          <img src="../../img/promocoes/rio-de-janeiro.png" alt="Imagem de Rio de Janeiro">
-          <p>Pacote</p>
-          <p>Rio de Janeiro - RJ</p>
-          <img src="../../img/promocoes/icone-preto-aviao.png" alt="Ícone preto de um avião">
-          <span>18 Ago. 2024 - 21 Ago. 2024</span>
-          <p>De R$ </p>
-          <p>Por apenas: R$ </p>
-        </div>
-        <div>
-          <img src="../../img/promocoes/minas-gerais.png" alt="Imagem de Minas Gerais">
-          <p>Pacote</p>
-          <p>Minas Gerais - MG</p>
-          <img src="../../img/promocoes/icone-preto-aviao.png" alt="Ícone preto de um avião">
-          <span>30 Ago. 2024 - 15 Set. 2024</span>
-          <p>De R$ 2.114,00</p>
-          <p>Por apenas: R$ 1.900,00</p>
-        </div>
-        <button>
-          <img src="../../img/promocoes/seta-direita.png" alt="Seta do carrossel para esquerda">
-        </button>
       </div>
     </section>
     <section>
-      <h3>Precisa de ajuda? Entre em contato conosco</h3>
-      <button>Contato</button>
+      <h2 class="contact-link-title">Precisa de ajuda? <br/> Entre em contato conosco</h2>
+      <a class="contact-link" href="/src/pages/contato/contato.html">
+        <button class="contact-btn">Contato</button>
+      </a>
     </section>
   </main>
   <footer class="footer">
-    <div class="footer-wave">
-      <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#4B9CD3" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,224C384,224,480,256,576,245.3C672,235,768,181,864,170.7C960,160,1056,192,1152,192C1248,192,1344,160,1392,144L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-    </div>
     <div class="footer-content">
       <div class="social">
         <h3>Siga-nos!</h3>
         <div class="social-icons">
-          <a href="#"><img src="x-icon.png" alt="X"></a>
-          <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-          <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+          <a href="#" aria-label="Twitter"><img src="../footer/x-twitter-brands-solid.svg" alt="Twitter"></a>
+          <a href="#" aria-label="Instagram"><img src="../footer/instagram-brands-solid.svg" alt="Instagram"></a>
+          <a href="#" aria-label="Facebook"><img src="../footer/facebook-brands-solid.svg" alt="Facebook"></a>
         </div>
       </div>
       <div class="contact">
         <h3>Contate-nos!</h3>
         <div class="contact-icons">
-          <a href="#"><img src="email-icon.png" alt="Email"></a>
-          <a href="#"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
+          <a href="mailto:contato@destinosincriveis.com" aria-label="Email"><img src="../footer/envelope-solid.svg" alt="Email"></a>
+          <a href="https://wa.me/5511999999999" target="_blank" aria-label="WhatsApp"><img src="../footer/whatsapp-brands-solid.svg" alt="WhatsApp"></a>
         </div>
       </div>
-      <div class="copyright">
-        <p>Copyright © 2024 Destinos Incríveis | Desenvolvido pelo Grupo 3 - TC31</p>
-      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright © 2024 Destinos Incríveis | Desenvolvido pelo Grupo 3 - TC31</p>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
