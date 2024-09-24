@@ -1,0 +1,205 @@
+:root {
+  --white: #FFFFFF;
+  --black: #000000;
+  --light-silver: #F5F5F5;
+  --blue: #1251B5;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+  margin: 0;
+  max-width: 100%;
+  padding: 0;
+}
+
+body {
+  background-color: var(--light-silver);
+}
+
+.banner {
+  position: relative;
+}
+
+.banner-image {
+  height: auto;
+  object-fit: cover;
+  width: auto;
+}
+
+.banner-heading,
+.banner-paragraph {
+  left: 7%;
+  position: absolute;
+}
+
+.banner-heading {
+  color: var(--white);
+  font-size: 4.063rem;
+  top: 20%;
+  width: 561px;
+}
+
+.banner-paragraph {
+  color: var(--white);
+  font-size: 1.5em;
+  top: 54%;
+  width: 629px;
+}
+
+.intro {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro-paragraph {
+  color: var(--black);
+  font-size: 1.5rem;
+  margin: 40px auto 115px;
+  max-width: 910px;
+}
+
+.intro img {
+  height: 100px;
+  width: 160px;
+}
+
+h2 {
+  color: var(--black);
+  font-size: 3.438rem;
+  font-weight: bold;
+  margin: 80px auto;
+  text-align: center;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.carousel-container {
+  display: flex;
+  height: 500px;
+  margin: 0 auto;
+  max-width: 1150px;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  padding: 0 10px;
+}
+
+.carousel-container::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  border-radius: 40px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  flex: 0 0 auto;
+  height: 430px;
+  margin-right: 40px;
+  width: 292px;
+}
+
+.card-image {
+  position: relative;
+}
+
+.card-type{
+  background: var(--blue);
+  border-radius: 20px;
+  bottom: -25px;
+  color: var(--white);
+  font-size: 1.375rem;
+  font-weight: bold;
+  left: 50%;
+  padding: 16px 70px;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.card-info {
+  height: 100px;
+  margin: 15px auto 0;
+  padding: 40px 15px 0;
+  width: 100%;
+}
+
+.icon-plane {
+  height: 27px;
+  margin-right: 15px;
+  width: 31px;
+}
+
+.date-info {
+  align-items: center;
+  display: flex;
+  margin: 5px 0 15px;
+}
+
+.date {
+  font-size: 0.875rem;
+}
+
+.price-info {
+  font-size: 1.125rem;
+  text-align: right;
+}
+
+.actual-price {
+  margin-left: 5px;
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.price {
+  font-size: 2.125rem;
+  font-weight: 900;
+}
+
+.arrows-btn {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1150px;
+}
+
+.pre-btn,
+.nxt-btn {
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  border: none;
+  bottom: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  width: 47px;
+  z-index: 8;
+}
+
+.contact-link-title {
+  margin-bottom: 50px;
+}
+
+.contact-link {
+  text-decoration: none;
+}
+
+.contact-link:focus-visible {
+  outline: none;
+}
+
+.contact-btn {
+  background-color: var(--blue);
+  border: transparent;
+  border-radius: 30px;
+  color: var(--white);
+  cursor: pointer;
+  display: block;
+  font-size: 1.625rem;
+  font-weight: bold;
+  margin: 0 auto 100px;
+  padding: 33px 130px;
+}
