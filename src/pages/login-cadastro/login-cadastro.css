@@ -13,6 +13,7 @@ main{
     display:flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 2%;
 }
 
 .disabled{
@@ -27,7 +28,7 @@ input, label{
     margin-bottom: -40px;
     margin-right: 10px;
     z-index: 1;
-    width: 12%;
+    width: 10%;
 
 }
 
@@ -63,21 +64,31 @@ input, label{
     font-weight: 700;
 }
 
-.selectedLogin{
+.loginBtn{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-right: 10px;
+}
+
+.selected{
     background-color: #000;
-    margin-right: 25%;
-    width: 10%;
+    width: 2.3vw;
     height: 5px;
     border-radius: 25px;
+    transition: display ease-in 5s;
+}
+
+.signUpBtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding-left: 10px;
 }
 
 #selected-sign-in{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #000;
     margin-left: 18%;
     width: 10%;
@@ -97,7 +108,7 @@ input, label{
 }
 
 .form input{
-    padding: 10px 160px 10px 10px;
+    padding: 3% 12vw 3% 3%;
     border-radius: 5px;
     background-color: #fff;
     border:solid 1px #1251b5;
@@ -175,7 +186,7 @@ input, label{
 
 .or hr{
     background-color: #3b3b3b;
-    width: 205px;
+    width: 33vh;
     height:1px;
     border-radius: 5px;
 }
@@ -203,7 +214,102 @@ input, label{
     height: 8%;
 }
 
-/* footer{
-   background-repeat: no-repeat;
-   width: 100%;
-} */
+/* Estilos gerais do footer */
+.top-footer{
+    display:block;
+    width:100%;
+}
+.footer {
+    display:flex;
+    background-image: url('../footer/top-footer.png');
+    /* background-position: bottom center; */
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    min-height:70vh;
+    /* padding: 20px 0; */
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    justify-content:center;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    bottom: 0;
+    align-self: flex-end;
+    gap:20px;
+  }
+
+  .footer-content-row{
+    display: flex;
+    flex-direction: row;
+    gap: 30vw;
+  }
+  
+  /* Estilo para os textos do footer */
+  .footer h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+  
+  /* Estilo para os ícones sociais e de contato */
+  .social-icons img, 
+  .contact-icons img {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons img:hover, 
+  .contact-icons img:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Estilo do copyright */
+  .copyright {
+    background-color: #003a74;
+    padding: 10px 0;
+    font-size: 0.9em;
+    color: white;
+  }
+  
+  /* Tornar responsivo para telas menores */
+  @media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+  }
+  
+  /* Estilos gerais */
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Garante que o footer fique no final da página */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* O conteúdo principal da página deve ocupar o espaço restante */
+  main {
+    flex: 1;
+  }
+  
+  /* Tornar os ícones brancos */
+  .social-icons img,
+  .contact-icons img {
+      filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(360deg) brightness(100%) contrast(100%);
+  }
+  
+  /* Efeito de hover (cor amarela ao passar o mouse) */
+  
+  
+  

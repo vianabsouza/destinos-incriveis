@@ -2,7 +2,6 @@ let loginSection = document.getElementById('loginSection');
 let signUpSection = document.getElementById('signUpSection');
 let loginPageBtn = document.getElementsByClassName('loginPageBtn');
 let signUpPageBtn = document.getElementsByClassName('signUpPageBtn');
-
 function openLogin() {
     signUpSection.classList.add('disabled');
     console.log(signUpSection.classList)
