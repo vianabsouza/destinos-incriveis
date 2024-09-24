@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --fontTitle1: "Red Hat Display", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização Header */
+.navbar {
+    position: center,fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.logo img {
+    align-items: center;
+    height: 50px;
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a.active, .nav-links a:hover {
+    background-color: #007BFF;
+    color: #ffffff;
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dropdown-btn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.user-icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Estilização Pagina Contato */
+
+.title-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0px 10px 40px;
+}
+
+.title-sec > h1 {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: var(--fontTitle1);
+}
+
+.title-sec > p {
+    font-family: var(--fontTitle1);
+    font-size: 24px;
+    font-weight: 400;
+}
+.info {
+    width: 100%;
+}
+
+.info-container {
+    /* border: 2px solid blue; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cards-container {
+    /* border: 2px solid red; */
+    padding-left: 40px;
+    flex: 1;
+}
+
+.cards-info {
+    padding: 20px 0px;
+    /* border: 2px solid aqua; */
+    display: flex;
+    border-bottom: 1px solid black;
+    gap: 20px;
+}
+
+.card-text > h4 {
+    color: aqua;
+    padding-bottom: 10px;
+}
+
+.card-text > p {
+    font-weight: 600;
+}
+
+.cont-container {
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont-container > h2 {
+    width: 567px;
+    font-family: var(--fontTitle1);
+    font-size: 35px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+    padding: 20px 43px;
+    background-color: #E9E9F4;
+    opacity: 9.9;
+    box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.form-container > h4 {
+    font-size: 20px;
+    font-family: var(--fontTitle1);
+}
+
+.form-container label {
+    font-size: 15px;
+    display: block;
+    margin-bottom: 8px; 
+    font-weight: bold;
+    font-family: var(--fontTitle1);
+}
+
+.form-container input[type="email"],
+.form-container input[type="number"], .form-container input[type="text"] {
+    width: 100%;
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 10px; 
+}
+
+.form-container button[type="submit"] {
+    align-items: center;
+    font-family: var(--fontTitle1);
+    font-weight: 600;
+    width: 100%; 
+    padding: 10px; 
+    background-color: #1251b5;
+    color: #FFFFFF; 
+    border: none;
+    border-radius: 10px; 
+    font-size: 16px; 
+    cursor: pointer;
+}
+
+.form-container button[type="submit"]:hover {
+    background-color: aqua;
+    color: #000;
+}
+
+.local-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.local-container > h2 {
+    font-family: var(--fontTitle1);
+    font-weight: 700;
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+.maps-container {
+    position: relative;
+    display: inline-block; 
+}
+
+.maps-container img {
+    width: 100vw;
+    height: auto;
+}
+
+.maps-options {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    background-color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-family: var(--fontTitle1);
+    font-weight: 600;
+}
+
+.maps-options a {
+    text-decoration: none;
+    color: #000; /* Define a cor dos links */
+    font-weight: bold; /* Deixa o texto mais destacado */
+    transition: background-color 0.3s ease; /* Animação suave ao passar o mouse */
+    border-radius: 4px;
+}
+
+.maps-options a:hover {
+    background-color: #ddd; /* Altera a cor de fundo ao passar o mouse */
+}
+
+/* Estilização Footer */
+.footer {
+    background-color: #0056A5;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para os textos do footer */
+  .footer h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+  
+  /* Estilo para os ícones sociais e de contato */
+  .social-icons img, 
+  .contact-icons img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons img:hover, 
+  .contact-icons img:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Estilo do copyright */
+  .copyright {
+    background-color: #003a74;
+    padding: 10px 0;
+    font-size: 0.9em;
+    color: white;
+  }
+  
+  /* Tornar responsivo para telas menores */
+  @media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+  }
+  
+  /* Estilos gerais */
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Garante que o footer fique no final da página */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* O conteúdo principal da página deve ocupar o espaço restante */
+  main {
+    flex: 1;
+  }
+  
+  /* Tornar os ícones brancos */
+  .social-icons img,
+  .contact-icons img {
+      filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(360deg) brightness(100%) contrast(100%);
+  }
