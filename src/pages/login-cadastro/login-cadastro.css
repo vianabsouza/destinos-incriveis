@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    font-family: 'Red Hat Display';
+}
+
+body{
+    background-image:url("../../img/login-cadastro/background.png");
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+main{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2%;
+}
+
+.disabled{
+    display: none !important;
+}
+
+input, label{
+    display: block;
+}
+
+.logo{
+    margin-bottom: -40px;
+    margin-right: 10px;
+    z-index: 1;
+    width: 10%;
+
+}
+
+.enter-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+    width: 35%;
+    background-color: rgb(245, 245, 245,0.8);
+    border-radius: 15px;
+}
+
+.changeFormButtons{
+    display: inline-flex;
+    align-self: center;
+    gap:8px;
+    margin-top: 12%;
+}
+
+.v-line{
+    background-color: #000;
+    width: 0.5px;
+}
+
+.changeFormButtons button{
+    background:transparent no-repeat;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size:20px ;
+    font-weight: 700;
+}
+
+.loginBtn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10px;
+}
+
+.selected{
+    background-color: #000;
+    width: 2.3vw;
+    height: 5px;
+    border-radius: 25px;
+    transition: display ease-in 5s;
+}
+
+.signUpBtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding-left: 10px;
+}
+
+#selected-sign-in{
+    background-color: #000;
+    margin-left: 18%;
+    width: 10%;
+    height: 5px;
+    border-radius: 25px;
+}
+
+
+.form{
+    display:flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    margin-top: 8%;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.form input{
+    padding: 3% 12vw 3% 3%;
+    border-radius: 5px;
+    background-color: #fff;
+    border:solid 1px #1251b5;
+    text-align: left;
+}
+
+.rememberMeBtn{
+    display:inline-flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 3%;
+}
+
+.form .rememberMeBtn input[type="checkbox"]{
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    appearance: none;
+  /* For iOS < 15 to remove gradient background */
+    background-color: #fff;
+  /* Not removed via appearance */
+    margin: 0;
+    display: grid;
+    place-content: center;
+    padding: 0;
+    cursor: pointer;
+
+    width: 20px;
+    height: 20px;
+    border-radius: 7px;
+}
+
+.form .rememberMeBtn input[type="checkbox"]::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #1251b5;
+    border-radius: 3px;
+}
+
+.form .rememberMeBtn input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+.rememberMeBtn label{
+    margin-left:5px;
+    margin-right: 120px;
+}
+
+.rememberMeBtn a{
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.submitButton{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.submitButton button{
+    padding: 7px 120px 7px;
+    border: none;
+    border-radius:8px;
+    background-color: #1251b5;
+    color:#fff;
+    font-weight:700;
+    cursor:pointer;
+}
+
+.or{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.or hr{
+    background-color: #3b3b3b;
+    width: 33vh;
+    height:1px;
+    border-radius: 5px;
+}
+
+.googleLogin{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.googleLogin button{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap:5%;
+    width: 65%;
+    border-radius: 5px;
+    border: solid 0.5px #1251b5;
+    cursor:pointer;
+}
+
+.googleLogin img{
+    width: 8%;
+    height: 8%;
+}
+
+/* Estilos gerais do footer */
+.top-footer{
+    display:block;
+    width:100%;
+}
+.footer {
+    display:flex;
+    background-image: url('../footer/top-footer.png');
+    /* background-position: bottom center; */
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    min-height:70vh;
+    /* padding: 20px 0; */
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    justify-content:center;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    bottom: 0;
+    align-self: flex-end;
+    gap:20px;
+  }
+
+  .footer-content-row{
+    display: flex;
+    flex-direction: row;
+    gap: 30vw;
+  }
+  
+  /* Estilo para os textos do footer */
+  .footer h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+  
+  /* Estilo para os ícones sociais e de contato */
+  .social-icons img, 
+  .contact-icons img {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons img:hover, 
+  .contact-icons img:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Estilo do copyright */
+  .copyright {
+    background-color: #003a74;
+    padding: 10px 0;
+    font-size: 0.9em;
+    color: white;
+  }
+  
+  /* Tornar responsivo para telas menores */
+  @media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+  }
+  
+  /* Estilos gerais */
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Garante que o footer fique no final da página */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* O conteúdo principal da página deve ocupar o espaço restante */
+  main {
+    flex: 1;
+  }
+  
+  /* Tornar os ícones brancos */
+  .social-icons img,
+  .contact-icons img {
+      filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(360deg) brightness(100%) contrast(100%);
+  }
+  
+  /* Efeito de hover (cor amarela ao passar o mouse) */
+  
+  
+  

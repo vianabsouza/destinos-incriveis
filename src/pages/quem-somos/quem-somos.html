@@ -4,11 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quem Somos</title>
+    <link rel="stylesheet" href="../quem-somos/quem-somos.css">
 </head>
 <body>
+    <header class="navbar">
+        <div class="logo">
+          <img src="../header/logo-2.png" alt="Logo">
+        </div>
+        <nav class="nav-links">
+          <a href="/index.html">Inicio</a>
+          <a href="/src/pages/quem-somos/quem-somos.html" class="active">Quem somos</a>
+          <a href="/src/pages/voos/voos.html">Voos</a>
+          <a href="/src/pages/promocoes/promocoes.html">Promoções</a>
+          <a href="/src/pages/reviews/reviews.html">Reviews</a>
+          <a href="/src/pages/contato/contato.html">Contato</a>
+        </nav>
+        <div class="user-menu">
+          <button class="dropdown-btn">▼</button>
+          <img src="../header/user.png" alt="User Icon" class="user-icon">
+        </div>
+      </header>
     <main>
         <section class="Quem-somos">
-            <div>
+            <div class="img-conf">
                 <img src="./img/img_somos.png">
             </div>
             <div class="box-text">
@@ -71,7 +89,7 @@
     <section class="Colaboradores">
         <h2>Colaboradores</h2>
         <div class="card-conta-colab">
-            <div class="card">
+            <div class="card-colab">
                 <img src="./img/perfil3.png">
                 <h4>David Reis</h4>
                 <p>Desenvolvedor</p>
@@ -81,7 +99,7 @@
                 </div>
             </div>
             
-            <div class="card">
+            <div class="card-colab">
                 <img src="./img/perfil1.png">
                 <h4>Barbara Viana</h4>
                 <p>Desenvolvedor</p>
@@ -91,39 +109,7 @@
                 </div>
             </div>
 
-            <div class="card">
-                <img src="./img/perfil6.png">
-                <h4>Jonas Sátiro</h4>
-                <p>Desenvolvedor</p>
-                <div>
-                    <span><img src="./img/icon_linkedin.png"></span>
-                    <span><img src="./img/icon_github.png"></span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card-conta-colab">
-            <div class="card">
-                <img src="./img/perfil5.png">
-                <h4>Hallysson Mateus</h4>
-                <p>Desenvolvedor</p>
-                <div>
-                    <span><img src="./img/icon_linkedin.png"></span>
-                    <span><img src="./img/icon_github.png"></span>
-                </div>
-            </div>
-            
-            <div class="card">
-                <img src="./img/perfil4.png">
-                <h4>Galdino Júnior</h4>
-                <p>Desenvolvedor</p>
-                <div>
-                    <span><img src="./img/icon_linkedin.png"></span>
-                    <span><img src="./img/icon_github.png"></span>
-                </div>
-            </div>
-
-            <div class="card">
+            <div class="card-colab">
                 <img src="./img/perfil2.png">
                 <h4>Breno Barros</h4>
                 <p>Desenvolvedor</p>
@@ -133,7 +119,51 @@
                 </div>
             </div>
         </div>
+
+        <div class="card-conta-colab">
+            <div class="card-colab">
+                <img src="./img/perfil5.png">
+                <h4>Hallysson Mateus</h4>
+                <p>Desenvolvedor</p>
+                <div>
+                    <span><img src="./img/icon_linkedin.png"></span>
+                    <span><img src="./img/icon_github.png"></span>
+                </div>
+            </div>
+            
+            <div class="card-colab">
+                <img src="./img/perfil4.png">
+                <h4>Galdino Júnior</h4>
+                <p>Desenvolvedor</p>
+                <div>
+                    <span><img src="./img/icon_linkedin.png"></span>
+                    <span><img src="./img/icon_github.png"></span>
+                </div>
+            </div>
+        </div>
     </section>
     </main>
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="social">
+            <h3>Siga-nos!</h3>
+            <div class="social-icons">
+              <a href="#" aria-label="Twitter"><img src="../footer/x-twitter-brands-solid.svg" alt="Twitter"></a>
+              <a href="#" aria-label="Instagram"><img src="../footer/instagram-brands-solid.svg" alt="Instagram"></a>
+              <a href="#" aria-label="Facebook"><img src="../footer/facebook-brands-solid.svg" alt="Facebook"></a>
+            </div>
+          </div>
+          <div class="contact">
+            <h3>Contate-nos!</h3>
+            <div class="contact-icons">
+              <a href="mailto:contato@destinosincriveis.com" aria-label="Email"><img src="../footer/envelope-solid.svg" alt="Email"></a>
+              <a href="https://wa.me/5511999999999" target="_blank" aria-label="WhatsApp"><img src="../footer/whatsapp-brands-solid.svg" alt="WhatsApp"></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>Copyright © 2024 Destinos Incríveis | Desenvolvido pelo Grupo 3 - TC31</p>
+        </div>
+      </footer>
 </body>
 </html>

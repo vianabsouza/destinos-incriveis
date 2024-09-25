@@ -4,52 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    <link rel="stylesheet" href="../contato/contato.css">
 </head>
 <body>
-    <!-- Lugar header/navbar -->
+    <header class="navbar">
+        <div class="logo">
+          <img src="../header/logo-2.png" alt="Logo">
+        </div>
+        <nav class="nav-links">
+          <a href="/index.html">Inicio</a>
+          <a href="/src/pages/quem-somos/quem-somos.html">Quem somos</a>
+          <a href="/src/pages/voos/voos.html">Voos</a>
+          <a href="/src/pages/promocoes/promocoes.html">Promoções</a>
+          <a href="/src/pages/reviews/reviews.html">Reviews</a>
+          <a href="/src/pages/contato/contato.html" class="active">Contato</a>
+        </nav>
+        <div class="user-menu">
+          <button class="dropdown-btn">▼</button>
+          <img src="../header/user.png" alt="User Icon" class="user-icon">
+        </div>
+      </header>
     <main>        
-        <section>
+        <section class="title-sec">
             <h1>Entre em Contato</h1>
             <p>Para mais informações, solicitações ou dúvidas sobre os pacotes ou demais soluções da Destinos  Incríveis, entre em contato! Na sequência preencha o formulario e aguarde o preve retorno da nossa equipe de atendimento.
             </p>            
         </section>
 
-        <section>
-            <div>
+        <section class="info">
+            <div class="info-container">
                 <div class="cards-container">
-                    <div>
+                    <div class="cards-info">
                         <div>
                             <img src="./img/form_phone.png">
                         </div>
-                        <div>
+                        <div class="card-text">
                             <h4>Telefone de Contato</h4>
                             <p>Sao Paulo: (11) 9xxxx-xxxx /(11)xxxx-xxxx</p>
                         </div>
                     </div>
-                    <div>
+                    <div class="cards-info">
                         <div>
                             <img src="./img/form_email.png">
                         </div>
-                        <div>
+                        <div class="card-text">
                             <h4>E-mail para Contato</h4>
                             <p>Empresaduvidas@gmail.com</p>
                         </div>
                     </div>
-                    <div>
+                    <div class="cards-info">
                         <div>
                             <img src="./img/solid_local.png">
                         </div>
-                        <div>
+                        <div class="card-text">
                             <h4>Como Chegar</h4>
                             <p>Rua de Narnia 2001 - Avenidade Paulista</p>
                             <p>CEP: xxxxx-xxx - Grifinoria - São Paulo - SP</p>
                         </div>
                     </div>
-                    <div>
+                    <div class="cards-info">
                         <div>
                             <img src="./img/item.png">
                         </div>
-                        <div>
+                        <div class="card-text">
                             <h4>Atendimento</h4>
                             <p>2ª a 6ª das 09:00 as 18:00</p>
                             <p>Estacionamento no Local</p>
@@ -63,35 +80,63 @@
         </section>
 
         <section>
-            <h2>Precisa de ajuda? Preencha seus dados e fale conosco!</h2>
-            <form>
-                <h4>Cadastre-se</h4>
-                <label>Nome</label>
-                <input type="text">
-                
-                <label>Email</label>
-                <input type="email">
+            <div class="cont-container">
+                <h2>Precisa de ajuda? Preencha seus dados e fale conosco!</h2>
+                <form class="form-container">
+                    <h4>Cadastre-se</h4>
+                    <label>Nome</label>
+                    <input type="text">
+                    
+                    <label>Email</label>
+                    <input type="email">
 
-                <label>Telefone</label>
-                <input type="number">
+                    <label>Telefone</label>
+                    <input type="number">
 
-                <label>Mensagem</label>
-                <input type="text">
+                    <label>Mensagem</label>
+                    <input type="text">
 
-                <button type="submit">Enviar</button>
-            </form>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            
         </section>
 
         <section>
-            <h2>Localização</h2>
-            <div>
-                <div>
-                    <p>Mapa</p>
-                    <p>Satélite</p>
+            <div class="local-container">
+                <h2>Localização</h2>
+                <div class="maps-container">
+                    <div class="maps-options">
+                        <a href="#mapa">Mapa</a>
+                        <a href="#satelite">Satélite</a>                        
+                    </div>
+                    <img src="./img/map.png">
                 </div>
-                <img src="./img/map.png">
             </div>
+            
         </section>
     </main>
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="social">
+            <h3>Siga-nos!</h3>
+            <div class="social-icons">
+              <a href="#" aria-label="Twitter"><img src="../footer/x-twitter-brands-solid.svg" alt="Twitter"></a>
+              <a href="#" aria-label="Instagram"><img src="../footer/instagram-brands-solid.svg" alt="Instagram"></a>
+              <a href="#" aria-label="Facebook"><img src="../footer/facebook-brands-solid.svg" alt="Facebook"></a>
+            </div>
+          </div>
+          <div class="contact">
+            <h3>Contate-nos!</h3>
+            <div class="contact-icons">
+              <a href="mailto:contato@destinosincriveis.com" aria-label="Email"><img src="../footer/envelope-solid.svg" alt="Email"></a>
+              <a href="https://wa.me/5511999999999" target="_blank" aria-label="WhatsApp"><img src="../footer/whatsapp-brands-solid.svg" alt="WhatsApp"></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>Copyright © 2024 Destinos Incríveis | Desenvolvido pelo Grupo 3 - TC31</p>
+        </div>
+      </footer>
 </body>
 </html>
