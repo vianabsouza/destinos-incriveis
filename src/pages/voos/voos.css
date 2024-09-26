@@ -4,8 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}         
-    
+}
 /* Contêiner para imagem e texto sobreposto */
 .imagem-container {
     position: relative;
@@ -46,7 +45,6 @@
     margin: 10px 0;
     font-size: 1.3em;
     font-weight: bold;
-    
 
 }
 /* Seção de voos */
@@ -55,7 +53,6 @@
     margin: 20px auto;  /* Aplica uma margem superior/inferior de 20px e centraliza o contêiner horizontalmente */
     padding: 20px;      /* Adiciona um preenchimento interno de 20px ao redor do conteúdo dentro do contêiner */
 }
-        
 .voo-card {
     display: flex;               /* Usa Flexbox para alinhar os elementos (imagem, detalhes, preço) horizontalmente */
     align-items: center;         /* Alinha os itens no centro verticalmente dentro do cartão */
@@ -68,12 +65,11 @@
 .img-1 {
     width: 150px; /* Tamanho ajustado */
     height: 120px;
-    border-radius: 10px;   
-    
+    border-radius: 10px;
 }
 .logo-aviao{
     width: 20px; /* Tamanho da logo ajustado */
-    height: auto;            
+    height: auto;
     margin-left: 5px;
     align-self: flex-start; /* Alinha a logo ao topo da div */
 }
@@ -82,7 +78,7 @@
     margin-top: 20px; /* Adiciona um espaço superior, se necessário */
 }
 
-.texto-detalhes h3{            
+.texto-detalhes h3{
     font-size: 1.2em;
     color: #333;
 }
@@ -109,10 +105,10 @@
     background-color: #e0e0e0;
     color: #333;
 }
-.info-voo-meio {        
+.info-voo-meio {
     margin: 0 200px;
 }
-.voo-preco {    
+.voo-preco {
     text-align: right;
     margin-right: 10px;
 }
@@ -125,7 +121,6 @@
     font-size: 2em; /* Define o tamanho da fonte como 2 vezes o tamanho padrão */
     color: #007BFF; /* Define a cor da fonte como azul */
     font-weight: bold; /* Define o peso da fonte como negrito */
-   
 }
 .voo-preco a {
     padding: 10px 20px;
@@ -159,5 +154,3 @@
 .botao-contato:hover {
     background-color: #0056b3; /* Muda a cor de fundo ao passar o mouse */
 }
-
-   
