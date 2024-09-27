@@ -1,154 +1,156 @@
 
-        /* Reseta margens e paddings padrão */
-        * {
-           margin: 0;
-           padding: 0;
-           box-sizing: border-box;
-        }
-         /* Estilo para o cabeçalho */
-        header {
-           display: flex;
-           justify-content: space-between;
-           align-items: center;
-           padding: 20px;
-           background-color: #fff;
-           border-bottom: 2px solid #ddd;
-        }
-        .logo img {
-           height: 80px; /* Ajuste o tamanho conforme necessário */
-        }
-        /* Contêiner para imagem e texto sobreposto */
-        .imagem-container {
-        position: relative;
-        width: 100%;
-        }
-       .imagem-expandida {
-        width: 100%;
-        height: 500px;
-        display: block;
-        }
-        .texto-lateral {
-        width: 50%;
-        padding: 20px;
-        font-size: 18px;
-        line-height: 1.6;
-        }
-        .texto-sobreposto {
-            position: absolute;
-            top: 50%; /* Centraliza verticalmente */
-            right: 10%; /* Alinha o texto à direita com um espaçamento */
-            transform: translateY(-50%);
-            color: white;
-            font-size: 24px;
-            font-weight: bold;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-            max-width: 40%; /* Limita a largura do texto */
-        }
-         /* Seção de voos */
-        .voos-container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-        }
-        .voo-card {
-            display: flex;
-            align-items: center; /* Centraliza verticalmente o conteúdo */
-            background-color: #f0eaea;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-            overflow: hidden;
-        }
-        .voo-card img {
-            width: 180px;
-            height: 130px;  
-            object-fit: cover;
-        }
-        .voo-info {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            padding: 20px;
-        }
-        .voo-detalhes {
-            margin-bottom: 15px; /* Espaço entre os cartões de voos */
-        }
-        .logo-e-titulo {
-            display: flex;
-            align-items: center;
-            margin-bottom: 5px; /* Espaçamento entre o título e o primeiro parágrafo */
-        }
-        
-        .logo-e-titulo .logo-aviao {
-            width: 20px; /* Ajuste conforme necessário */
-            height: auto; /* Mantém a proporção da imagem */
-            margin-right: 10px; /* Espaço entre a imagem e o texto */
-        }        
-      
-        .voo-detalhes p {
-            margin: 5px 0;
-            color: #777;
-        }
-        .somente-ida {
-            display: inline-block;
-            background-color: #0f086f; /* Fundo azul */
-            color: #fff; /* Texto branco */
-            padding: 5px 10px;
-            border-radius: 10px;
-            margin-right: 10px;
-            margin-top: 5px;
-        }
-        
-        .economy {
-            display: inline-block;
-            background-color: #ccc; /* Fundo cinza */
-            color: #000000; /* Texto preto ou cinza escuro */
-            padding: 5px 10px;
-            border-radius: 10px;
-            margin-top: 5px;
-        }
-        .voo-preco {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: right;
-        }
-        .voo-preco span {
-            font-size: 24px;
-            color: #007BFF;
-            font-weight: bold;
-        }
-        .voo-preco a {  
-            margin-top: 10px;
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            text-align: center;
-        }
-        .voo-preco a:hover {
-            background-color: #0056b3;
-        }
-        .contato-container {
-            text-align: center; /* Centraliza o texto dentro da div */
-            margin-top: 20px; /* Adiciona um espaço superior, se necessário */
-        }
-        
-        .botao-contato {
-            display: inline-block;
-            background-color: #007bff; /* Cor de fundo do botão */
-            color: #fff; /* Cor do texto do botão */
-            padding: 10px 20px;
-            margin-top: 20px; /* Espaço entre o texto e o botão */
-            border-radius: 5px;
-            text-decoration: none; /* Remove sublinhado do link */
-            font-weight: bold;
-            transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
-        }
-        
-        .botao-contato:hover {
-            background-color: #0056b3; /* Muda a cor de fundo ao passar o mouse */
-        }
+/* Reseta margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Contêiner para imagem e texto sobreposto */
+.imagem-container {
+    position: relative;
+    width: 100%;
+}
+.imagem-expandida {
+    width: 100%;
+    height: 500px;
+    display: block;
+}
+.texto-lateral {
+    width: 50%;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.texto-sobreposto {
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente */
+    right: 5%; /* Alinha o texto à direita com um espaçamento */
+    transform: translateY(-50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    max-width: 40%; /* Limita a largura do texto */
+}
+.texto-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.texto-container .texto-voos{
+    font-family: Arial, sans-serif ;
+    margin: 10px 0;
+    font-size: 1.3em;
+    font-weight: bold;
 
-   
+}
+/* Seção de voos */
+.voos-container {
+    max-width: 1200px;  /* Define a largura máxima do contêiner como 1200px para limitar a expansão da página */
+    margin: 20px auto;  /* Aplica uma margem superior/inferior de 20px e centraliza o contêiner horizontalmente */
+    padding: 20px;      /* Adiciona um preenchimento interno de 20px ao redor do conteúdo dentro do contêiner */
+}
+.voo-card {
+    display: flex;               /* Usa Flexbox para alinhar os elementos (imagem, detalhes, preço) horizontalmente */
+    align-items: center;         /* Alinha os itens no centro verticalmente dentro do cartão */
+    justify-content: space-between; /* Distribui os itens uniformemente, com espaço entre eles */
+    padding: 20px;               /* Adiciona um preenchimento interno de 20px ao redor do conteúdo do cartão */
+    background-color: #f9f9f9;   /* Define o fundo do cartão com um cinza claro */
+    border-radius: 10px;         /* Arredonda os cantos do cartão com um raio de 10px */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); /* Adiciona uma sombra sutil ao redor do cartão para dar profundidade */
+}
+.img-1 {
+    width: 150px; /* Tamanho ajustado */
+    height: 120px;
+    border-radius: 10px;
+}
+.logo-aviao{
+    width: 20px; /* Tamanho da logo ajustado */
+    height: auto;
+    margin-left: 5px;
+    align-self: flex-start; /* Alinha a logo ao topo da div */
+}
+.contato-container {
+    text-align: center; /* Centraliza o texto dentro da div */
+    margin-top: 20px; /* Adiciona um espaço superior, se necessário */
+}
+
+.texto-detalhes h3{
+    font-size: 1.2em;
+    color: #333;
+}
+.texto-detalhes p{
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+.cia-aerea{
+    margin-top: 10px;
+}
+.somente-ida, .economy {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.6em;
+    font-weight: bold;
+}
+.somente-ida {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.economy {
+    background-color: #e0e0e0;
+    color: #333;
+}
+.info-voo-meio {
+    margin: 0 200px;
+}
+.voo-preco {
+    text-align: right;
+    margin-right: 10px;
+}
+.voo-preco .tarifa{
+    font-size: 0.8em;
+    margin: 5px;
+}
+.voo-preco span {
+    display: block; /* Exibe o preço como um bloco */
+    font-size: 2em; /* Define o tamanho da fonte como 2 vezes o tamanho padrão */
+    color: #007BFF; /* Define a cor da fonte como azul */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+}
+.voo-preco a {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 10px;
+}
+.voo-preco a:hover {
+    background-color: #0056b3;
+}
+
+
+
+.botao-contato {
+    display: inline-block;
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 20px;
+    margin-top: 20px; /* Espaço entre o texto e o botão */
+    margin-bottom: 20px; /* Espaço adicional abaixo do botão */
+    border-radius: 5px;
+    text-decoration: none; /* Remove sublinhado do link */
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+.botao-contato:hover {
+    background-color: #0056b3; /* Muda a cor de fundo ao passar o mouse */
+}
