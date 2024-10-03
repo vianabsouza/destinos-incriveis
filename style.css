@@ -3,7 +3,6 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
 }
 
 .navbar {
@@ -63,26 +62,26 @@
     object-fit: cover;
 }
 
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
         }
 
-        .logo {
-            width: 50px;
-        }
+.menu {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+  }
 
-        .menu {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        .menu li {
-            margin-left: 20px;
-        }
+ .menu li {
+   margin-left: 20px;
+}
 
         .menu a {
             text-decoration: none;
@@ -90,7 +89,7 @@
         }
 
         .tela {
-          background-image: url(home/tela.png);
+          background-image: url(/destinos-incriveis/src/img/home/tela.png);
           background-size: cover;
           background-position: center;
           padding: 50px 0;
@@ -101,7 +100,7 @@
           display: flex;
           flex-direction: column;
           justify-content: space-between; 
-          height: 100vh;
+          min-height: 100vh;
         }
 
         .texto {
@@ -147,6 +146,21 @@
             text-align: right;
 
         }
+        .price-info {
+          font-size: 1.125rem;
+          text-align: right;
+        }
+        
+        .actual-price {
+          margin-left: 5px;
+          opacity: 0.5;
+          text-decoration: line-through;
+        }
+        
+        .price {
+          font-size: 2.125rem;
+          font-weight: 900;
+        }
 
         .container {
            display: flex;
@@ -162,10 +176,14 @@
            overflow: hidden;
         }
 
-        .card img {
+        .card1 img {
            width: 100%;
            height: 200px;
            object-fit: cover;
+        }
+
+        .card-image {
+          position: relative;
         }
 
         .card-body {
@@ -179,11 +197,26 @@
            text-align: center;
         }
 
-        .card-text {
-           font-size: 15px;
-           margin-bottom: 10px;
-           text-align: left;
+        .date-info {
+          align-items: center;
+          display: flex;
+          margin: 5px 0 15px;
+          font-size: 15px;
         }
+
+        .icon-plane {
+          height: 27px;
+          margin-right: 15px;
+          width: 33px;
+        }
+
+        .card-text {
+           text-align: center;
+           font-size: 0.875rem;
+           display: flex;
+           margin: 5px 0 15px;
+          }
+    
         .card-text1 {
            font-size: 20px;
            margin-bottom: 10px;
@@ -220,15 +253,15 @@
         }
 
         .veja{
-            background-image: url(home/QUEM\ SOMOS1.png);
+            background-image: url(/destinos-incriveis/src/img/home/QUEM\ SOMOS1.png);
             background-size: cover;
             background-position: center -200px;
             padding: 350px ;
             display: flex;
             flex-direction: column;
             justify-content: space-between; 
-            height: 100vh;
-        
+            min-height: 100vh;
+
         }
         .veja-titulo h2 {
             font-size: 70px;
@@ -238,7 +271,6 @@
             margin-bottom: 10px;
             margin-left: -280px; 
             margin-top: -200px;
-           
         }
 
         .veja-frase p {
@@ -281,10 +313,8 @@
             padding: 30px;
             border-radius: 10px;
             box-shadow: #000000;
-            
         }
 
-        
         .review {
             display: flex;
             flex-direction: column;
@@ -346,36 +376,83 @@
             margin-top: 30px;
             transition: background-color 0.3s ease;
         }
-    
 
-        footer {
-    background: linear-gradient(to bottom, #ffffff, #007BFF);
-    color: white;
-    text-align: center;
+        /* Estilização Footer */
+.footer {
+    background-color: #0056A5;
     padding: 20px 0;
+    text-align: center;    
+    color: white;
+    font-family: Arial, sans-serif;
+    position: relative;
+    bottom: 0;
+    width: 100%;
   }
-
-  .footer-top {
+  
+  .footer-content {
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
-  }
-
-  .follow-us, .contact-us {
-    display: flex;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
   }
-
-  .follow-us p, .contact-us p {
-    margin-right: 10px;
+  
+  /* Estilo para os textos do footer */
+  .footer h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
   }
-
-  .footer-bottom {
-    border-top: 1px solid #fff;
-    padding-top: 10px;
+  
+  /* Estilo para os ícones sociais e de contato */
+  .social-icons img, 
+  .contact-icons img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
   }
-
-  .icon-globe, .icon-envelope, .icon-facebook, .icon-phone {
-    margin: 0 5px;
-    font-size: 24px;
+  
+  .social-icons img:hover, 
+  .contact-icons img:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Estilo do copyright */
+  .copyright {
+    background-color: #003a74;
+    padding: 10px 0;
+    font-size: 0.9em;
+    color: white;
+  }
+  
+  /* Tornar responsivo para telas menores */
+  @media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+  }
+  
+  /* Estilos gerais */
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Garante que o footer fique no final da página */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* O conteúdo principal da página deve ocupar o espaço restante */
+  main {
+    flex: 1;
+  }
+  
+  /* Tornar os ícones brancos */
+  .social-icons img,
+  .contact-icons img {
+      filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(360deg) brightness(100%) contrast(100%);
   }

@@ -6,7 +6,7 @@
     <title>Voos</title>
     <!--estilos da pagina-->
 
-    <link rel="stylesheet" href="voos.css">
+    <link rel="stylesheet" href="../voos/voos.css">
     <link rel="stylesheet" href="../footer/footer.css">
     <link rel="stylesheet" href="../header/header.css">
 
@@ -20,16 +20,16 @@
             <img src="../header/logo-2.png" alt="Logo">
         </div>
         <nav class="nav-links">
-            <a href="#"class="active">Inicio</a>
-            <a href="#">Quem somos</a>
-            <a href="#">Voos</a>
-            <a href="#">Promoções</a>
-            <a href="#">Reviews</a>
-            <a href="#">Contato</a>
+            <a href="/destinos-incriveis/index.html">Inicio</a>
+            <a href="/destinos-incriveis/src/pages/quem-somos/quem-somos.html">Quem somos</a>
+            <a href="/destinos-incriveis/src/pages/voos/voos.html" class="active">Voos</a>
+            <a href="/destinos-incriveis/src/pages/promocoes/promocoes.html">Promoções</a>
+            <a href="/destinos-incriveis/src/pages/reviews/reviews.html">Reviews</a>
+            <a href="/destinos-incriveis/src/pages/contato/contato.html">Contato</a>
         </nav>
         <div class="user-menu">
             <button class="dropdown-btn">▼</button>
-            <img src="user.png" alt="User Icon" class="user-icon">
+            <img src="../header/user.png" alt="User Icon" class="user-icon">
         </div>
     </header>
     
@@ -42,139 +42,220 @@
         </div>
     </div>
     <!-- Texto descritivo -->
-    <div class="voos-container">
-        <p>
-            Planeje sua próxima aventura com facilidade e economia! Na Destinos Incríveis, oferecemos
-             uma ampla seleção de voos para destinos incríveis, tanto nacionais quanto internacionais.
-            Nossa missão é ajudar você a encontrar as melhores opções de passagens aéreas, garantindo
-             que sua viagem comece da melhor forma possível.Com parcerias com as principais companhias
-             aéreas, podemos oferecer tarifas exclusivas e promoções imperdíveis. Seja para uma viagem
-             de negócios, férias em família, ou uma escapada de fim de semana, temos o voo perfeito para
-             você. Nossa plataforma compara preços em tempo real, mostrando as melhores ofertas disponí-
-             veis. Além  disso, oferecemos suporte personalizado para que você tenha uma experiência de
-             compra tranquila e sem complicações.
+    <div class="texto-container">
+        <p class="texto-voos">Planeje sua próxima aventura com facilidade e economia! Na Destinos Incríveis, oferecemos<br>
+            uma ampla seleção de voos para destinos incríveis, tanto nacionais quanto internacionais. <br>
+            Nossa missão é ajudar você a encontrar as melhores opções de passagens aéreas, garantindo <br>
+            que sua viagem comece da melhor forma possível.</p>
+            
+        <p class="texto-voos">Com parcerias com as principais companhias aéreas, podemos oferecer tarifas exclusivas e <br>
+            promoções imperdíveis. Seja para uma viagem de negócios, férias em família, ou uma <br>
+            escapada de fim de semana, temos o voo perfeito para você.</p>
+
+        <p class="texto-voos">Nossa plataforma compara preços em tempo real, mostrando as melhores ofertas <br>
+            disponí-veis. Além  disso, oferecemos suporte personalizado para que você tenha uma <br>
+             experiência de compra tranquila e sem complicações.
         </p>
     </div>
 
     <!-- Seção de voos -->
+
+    <!-- voo 1--> 
     <div class="voos-container">
-        <!-- Voo 1 -->
         <div class="voo-card">
-            <img src="img/BH.png" alt="SP">
-            <div class="voo-info">
-                <div class="voo-detalhes">
-                    <div class="logo-e-titulo">
-                        <img src="img/logo-aviao.png" alt="logo-avião" class="logo-aviao">
-                        <h3>de Rio de Janiero a Belo Horizonte</h3> 
-                    </div>
-                    <p>Ida: 01/09/2024</p>
-                    <p>Volta: 15/09/2024</p>
-                    <p>Companhia: Latan</p>
-                    <p class="somente-ida">Somente Ida</p>
-                    <p class="economy">Economy</p>                    
-                </div>    
-                <div class="voo-preco">
-                    <span>R$ 340,00</span>
-                    <a href="#">Comprar</a>                       
-                </div> 
-            </div>      
-        </div> 
-        <!-- Voo 2 -->
+            <img src="img/BH.png" alt="SP" class="img-1"> 
+            <img src="img/logo-aviao.png" alt="logo-avião" class="logo-aviao">
+            <div class="texto-detalhes">
+                <p>De Rio de Janiero a</p>
+                <h3>Belo Horizonte</h3>
+                <p class="cia-aerea">Latam</p>
+                <p class="somente-ida">Somente ida</p>
+                <p class="economy">Economy</p>
+            </div>
+            <div class="info-voo-meio">
+                <p>Ida - Domingo 01/09/2024</p>
+                <p>GRU <strong>1h 30m</strong> PUJ</p>
+                <p>7:15 Voo direto 9:00</p>
+            </div>
+            <div class="voo-preco">
+                <span>R$ 340,00</span>
+                <p class="tarifa">Tarifas incluidas</p>
+                <a href="#">Comprar</a>                       
+            </div> 
+        </div>       
+    </div>
+    
+    <!-- voo 2-->
+
+    <div class="voos-container">
         <div class="voo-card">
-            <img src="img/sp.png" alt="SP">
-            <div class="voo-info">
-                <div class="voo-detalhes">
-                    <div class="logo-e-titulo">
-                        <img src="img/logo-aviao.png" alt="logo-avião" class="logo-aviao">
-                        <h3> de Belo Horizonte a São Paulo</h3> 
-                    </div>
-                    <p>Ida: 01/09/2024</p>
-                    <p>Volta: 15/09/2024</p>
-                    <p>Companhia: Latan</p>
-                    <p class="somente-ida">Somente Ida</p>
-                    <p class="economy">Economy</p>  
-                </div>    
-                <div class="voo-preco">
-                    <span>R$ 290,00</span>
-                    <a href="#">Comprar</a>                       
-                </div> 
-            </div>      
-        </div>
-        <!-- Voo 3 -->
+            <img src="img/sp.png" alt="SP" class="img-1"> 
+            <img src="img/logo-aviao.png" alt="logo-avião" class="logo-aviao">
+            <div class="texto-detalhes">
+                <p>De Belo Horizonte a</p>
+                <h3>São Paulo</h3>
+                <p class="cia-aerea">Latam</p>
+                <p class="somente-ida">Somente ida</p>
+                <p class="economy">Economy</p>
+            </div>
+            <div class="info-voo-meio">
+                <p>Ida - Sábado 17/08/24</p>
+                <p>GRU <strong>1h 30m</strong> PUJ</p>
+                <p>7:15 Voo direto 9:00</p>
+            </div>
+            <div class="voo-preco">
+                <span>R$ 290,00</span>
+                <p class="tarifa">Tarifas incluidas</p>
+                <a href="#">Comprar</a>                       
+            </div> 
+        </div>       
+    </div>
+
+    <!-- voo 3-->
+
+    <div class="voos-container">
         <div class="voo-card">
-            <img src="img/RJ.png" alt="SP">
-            <div class="voo-info">
-                <div class="voo-detalhes">
-                    <div class="logo-e-titulo">
-                        <img src="img/logo-aviao.png" alt="logo-avião" class="logo-aviao">
-                        <h3>De São Paulo a Rio de Janiero</h3> 
-                    </div>
-                    <p>Ida: 01/09/2024</p>
-                    <p>Volta: 15/09/2024</p>
-                    <p>Companhia: Latan</p>
-                    <p class="somente-ida">Somente Ida</p>
-                    <p class="economy">Economy</p>  
-                </div>    
-                <div class="voo-preco">
-                    <span>R$ 296,00</span>
-                    <a href="#">Comprar</a>                       
-                </div> 
-            </div>      
-        </div>
-        <!-- Voo 4 -->
+            <img src="img/RJ.png" alt="SP" class="img-1"> 
+            <img src="img/logo-aviao.png" alt="logo-avião" class="logo-aviao">
+            <div class="texto-detalhes">
+                <p>De São Paulo a</p>
+                <h3>Rio de Janiero</h3>
+                <p class="cia-aerea">Latam</p>
+                <p class="somente-ida">Somente ida</p>
+                <p class="economy">Economy</p>
+            </div>
+            <div class="info-voo-meio">
+                <p>Ida - Domingo 01/09/2024</p>
+                <p>GRU <strong>1h 30m</strong> PUJ</p>
+                <p>7:15 Voo direto 9:00</p>
+            </div>
+            <div class="voo-preco">
+                <span>R$ 296,00</span>
+                <p class="tarifa">Tarifas incluidas</p>
+                <a href="#">Comprar</a>                       
+            </div> 
+        </div>       
+    </div>
+
+    <!-- voo 4-->
+
+    <div class="voos-container">
         <div class="voo-card">
-            <img src="img/FO.png" alt="SP">
-            <div class="voo-info">
-                <div class="voo-detalhes">
-                    <div class="logo-e-titulo">
-                        <img src="img/logo-aviao.png" alt="logo-avião" class="logo-aviao">
-                        <h3>De Rio de Janiero a Fortaleza</h3> 
-                    </div>
-                    <p>Ida: 01/09/2024</p>
-                    <p>Volta: 15/09/2024</p>
-                    <p>Companhia: Latan</p>
-                    <p class="somente-ida">Somente Ida</p>
-                    <p class="economy">Economy</p>  
-                </div>    
-                <div class="voo-preco">
-                    <span>R$ 380,00</span>
-                    <a href="#">Comprar</a>                       
-                </div> 
-            </div>      
-        </div>            
-    </div> 
+            <img src="img/FO.png" alt="SP" class="img-1"> 
+            <img src="img/logo-aviao.png" alt="logo-avião" class="logo-aviao">
+            <div class="texto-detalhes">
+                <p>De Rio de Janiero a</p>
+                <h3>Fortaleza</h3>
+                <p class="cia-aerea">Latam</p>
+                <p class="somente-ida">Somente ida</p>
+                <p class="economy">Economy</p>
+            </div>
+            <div class="info-voo-meio">
+                <p>Ida - Domingo 01/09/2024</p>
+                <p>GRU <strong>1h 30m</strong> PUJ</p>
+                <p>7:15 Voo direto 9:00</p>
+            </div>
+            <div class="voo-preco">
+                <span>R$ 380,00</span>
+                <p class="tarifa">Tarifas incluidas</p>
+                <a href="#">Comprar</a>                       
+            </div> 
+        </div>       
+    </div>
+
+    <!-- voo 5-->
+
+    <div class="voos-container">
+        <div class="voo-card">
+            <img src="img/rio-grande-sul.png" alt="SP" class="img-1"> 
+            <img src="img/logo-aviao.png" alt="logo-avião" class="logo-aviao">
+            <div class="texto-detalhes">
+                <p>De São Paulo a</p>
+                <h3>Mato Grosso do Sul</h3>
+                <p class="cia-aerea">Latam</p>
+                <p class="somente-ida">Somente ida</p>
+                <p class="economy">Economy</p>
+            </div>
+            <div class="info-voo-meio">
+                <p>Ida - Domingo 01/09/2024</p>
+                <p>GRU <strong>1h 30m</strong> PUJ</p>
+                <p>7:15 Voo direto 9:00</p>
+            </div>
+            <div class="voo-preco">
+                <span>R$ 485,00</span>
+                <p class="tarifa">Tarifas incluidas</p>
+                <a href="#">Comprar</a>                       
+            </div> 
+        </div>       
+    </div>
+
+    <!-- voo 6-->
+
+    <div class="voos-container">
+        <div class="voo-card">
+            <img src="img/mato-grosso-sul.png" alt="SP" class="img-1"> 
+            <img src="img/logo-aviao.png" alt="logo-avião" class="logo-aviao">
+            <div class="texto-detalhes">
+                <p>De Rio de Janiero a</p>
+                <h3>Rio grande do sul</h3>
+                <p class="cia-aerea">Latam</p>
+                <p class="somente-ida">Somente ida</p>
+                <p class="economy">Economy</p>
+            </div>
+            <div class="info-voo-meio">
+                <p>Ida - Domingo 01/09/2024</p>
+                <p>GRU <strong>1h 30m</strong> PUJ</p>
+                <p>7:15 Voo direto 9:00</p>
+            </div>
+            <div class="voo-preco">
+                <span>R$ 296,00</span>
+                <p class="tarifa">Tarifas incluidas</p>
+                <a href="#">Comprar</a>                       
+            </div> 
+        </div>       
+    </div>
+
+
+    <!--contato-->
+
     <div class="contato-container">
         <h2>Precisa de ajuda?<br>
         Entre em contato conosco.</h2>
         <div>
-            <a href="#" class="botao-contato">Contato</a>
+            <a href="/destinos-incriveis/src/pages/contato/contato.html" class="botao-contato">Contato</a>
         </div>
-    </div>         
+    </div>  
+    
+    <!--Rodapé-->
     <footer class="footer">
-        <div class="footer-wave">
-            <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#4B9CD3" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,224C384,224,480,256,576,245.3C672,235,768,181,864,170.7C960,160,1056,192,1152,192C1248,192,1344,160,1392,144L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-        </div>
         <div class="footer-content">
+
+            <!-- Redes Sociais -->
             <div class="social">
                 <h3>Siga-nos!</h3>
                 <div class="social-icons">
-                    <a href="#"><img src="x-icon.png" alt="X"></a>
-                    <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#" aria-label="Twitter"><img src="../footer/x-twitter-brands-solid.svg" alt="Twitter"></a>
+                    <a href="#" aria-label="Instagram"><img src="../footer/instagram-brands-solid.svg" alt="Instagram"></a>
+                    <a href="#" aria-label="Facebook"><img src="../footer/facebook-brands-solid.svg" alt="Facebook"></a>
                 </div>
             </div>
+
+            <!-- Contato -->
             <div class="contact">
                 <h3>Contate-nos!</h3>
                 <div class="contact-icons">
-                    <a href="#"><img src="email-icon.png" alt="Email"></a>
-                    <a href="#"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
+                    <a href="mailto:contato@destinosincriveis.com" aria-label="Email"><img src="../footer/envelope-solid.svg" alt="Email"></a>
+                    <a href="https://wa.me/5511999999999" target="_blank" aria-label="WhatsApp"><img src="../footer/whatsapp-brands-solid.svg" alt="WhatsApp"></a>
                 </div>
             </div>
-            <div class="copyright">
-                <p>Copyright © 2024 Destinos Incríveis | Desenvolvido pelo Grupo 3 - TC31</p>
-            </div>
+
         </div>
-    </footer>    
+
+        <!-- Copyright -->
+        <div class="copyright">
+            <p>Copyright © 2024 Destinos Incríveis | Desenvolvido pelo Grupo 3 - TC31</p>
+        </div>
+    </footer>
     
 </body>
 </html>
