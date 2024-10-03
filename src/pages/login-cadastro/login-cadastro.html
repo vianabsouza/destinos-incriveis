@@ -22,12 +22,14 @@
             </div>
             <form action="#" class="form">
                 <div>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
+                    <label for="email">Email <span><i>*Campo obrigatório</i></span></label>
+                    <input type="email" id="email" name="email" required>
+                    <p id="email-login-helper" class="helper-text">Mensagem de ajuda</p>
                 </div>
                 <div>
-                    <label for="password">Senha</label>
+                    <label for="password">Senha <span><i>*Campo obrigatório</i></span></label>
                     <input type="password" id="password" name="password">
+                    <p id="password-login-helper" class="helper-text">Mensagem de ajuda</p>
                 </div>
                 <div class="rememberMeBtn">
                     <input type="checkbox" name="rememberMe" id="rememberMe">
@@ -71,16 +73,19 @@
                     <input type="text" id="lastName" name="lastName">
                 </div>
                 <div>
-                    <label for="signup-email">Email</label>
+                    <label for="signup-email">Email <span><i>*Campo obrigatório</i></span></label>
                     <input type="email" id="signup-email" name="email">
+                    <p id="email-signup-helper" class="helper-text">Mensagem de ajuda</p>
                 </div>
                 <div>
-                    <label for="signup-password">Senha</label>
+                    <label for="signup-password">Senha <span><i>*Campo obrigatório</i></span></label>
                     <input type="password" id="signup-password"name="password">
+                    <p id="password-signup-helper" class="helper-text">Mensagem de ajuda</p>
                 </div>
                 <div>
-                    <label for="passwordCheck">Repita sua senha</label>
+                    <label for="passwordCheck">Repita sua senha <span><i>*Campo obrigatório</i></span></label>
                     <input type="password" id="passwordCheck" name="passwordCheck">
+                    <p id="password-check-signup-helper" class="helper-text">Mensagem de ajuda</p>
                 </div>
                 <div class="submitButton">
                     <button type="submit">Criar Conta</button>
