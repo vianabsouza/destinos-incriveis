@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reviews</title>
     <!--estilos da pagina-->
-
     <link rel="stylesheet" href="../reviews/reviews.css">
     <link rel="stylesheet" href="../footer/footer.css">
     <link rel="stylesheet" href="../header/header.css">
 
     <!--favicon-->
     <link rel="shortcut icon" href="img/logo-1.png" type="image/png">
-        
+    <!--link de icones bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../reviews/swiper-bundle.min.css">
 </head>
 <body>
     <header class="navbar">
@@ -43,61 +45,95 @@
     </div>
 
     <h1>O que os clientes estão falando!</h1>
-   
+
      <!-- Conteúdo da página Reviews -->
-     <div class="content">        
-        <div class="review-carousel">
-            <div class="slides">
-                <div class="slide">
-                    <div class="review-item">
-                        <h3>Avaliação 1</h3>
-                        <h3>Excelente Serviço!</h3>
-                        <p>“Fizemos uma viagem incrível com a ajuda desta agência. Tudo foi perfeito, desde a reserva até o atendimento durante a viagem.”</p>
-                        <p>Antonio José Cunha</p>
+    <main class="corpo">
+        <section class="depoimentos mySwiper">
+            <!--slide 1-->
+            <div class="depoimentos-container swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="slides swiper-slide">
+                    <i class="bi bi-quote"></i>
+                    <p class="depoi-texto">“Fizemos uma viagem incrível com a ajuda desta agência. Tudo foi perfeito, desde a reserva até o atendimento durante a viagem.”</p>
+                    <div class="pessoa">
+                        <img src="./img/batista.png" alt="pessoa">
+                        <div class="info-pessoa">
+                            <p class="nome-pessoa">Rafael Batista</p>
+                            <p class="func-pessoa">Web Developer</p>
+                        </div>
                     </div>
                 </div>
-                <div class="slide">
-                    <div class="review-item">
-                        <h3>Uma Experiência Inesquecível</h3>
-                        <p>“A viagem foi maravilhosa e superou todas as nossas expectativas. Recomendo a todos que procuram uma experiência de viagem de qualidade.”</p>
+                <!-- Slide 2 -->
+                <div class="slides swiper-slide">
+                    <i class="bi bi-quote"></i>
+                    <p class="depoi-texto">Melhor viagem da minha vida!
+                        Eu e minha família tivemos uma viagem inesquecível graças à Destinos Incríveis. O suporte foi excelente, e eles estavam sempre disponíveis para qualquer dúvida. Vou planejar todas as minhas viagens futuras com eles!</p>
+                    <div class="pessoa">
+                        <img src="./img/carlos.png" alt="pessoa">
+                        <div class="info-pessoa">
+                            <p class="nome-pessoa">Carlos Oliveira</p>
+                            <p class="func-pessoa">Empresário</p>
+                        </div>
                     </div>
                 </div>
-                <!-- Seção de  slides  -->
-            </div>
-            <div class="controls">
-                <button class="control prev">❮</button>
-                <button class="control next">❯</button>
-            </div>
-        </div>
-
-        <!-- Seção de Avaliação -->
-        <div class="feedback-section">
-            <h2>Viajou com a gente? <br> Avalie-nos!</h2>
-            <h4>Conecte com sua conta e deixe sua avaliação :)</h4>
-
-            <form id="reviewForm">
-                <div class="rating-stars">
-                    <input type="radio" id="star5" name="rating" value="5">
-                    <label for="star5">★</label>
-                    <input type="radio" id="star4" name="rating" value="4">
-                    <label for="star4">★</label>
-                    <input type="radio" id="star3" name="rating" value="3">
-                    <label for="star3">★</label>
-                    <input type="radio" id="star2" name="rating" value="2">
-                    <label for="star2">★</label>
-                    <input type="radio" id="star1" name="rating" value="1">
-                    <label for="star1">★</label>
+                <!-- Slide 3 -->
+                <div class="slides swiper-slide">
+                    <i class="bi bi-quote"></i>
+                    <p class="depoi-texto">Experiência sensacional!
+                        Minha viagem foi perfeita do início ao fim! A equipe da Destinos Incríveis foi super atenciosa, e todas as reservas foram feitas com muito cuidado. Sem dúvida, uma das melhores agências com quem já viajei. Recomendo para todos!</p>
+                    <div class="pessoa">
+                        <img src="./img/beatriz.png" alt="pessoa">
+                        <div class="info-pessoa">
+                            <p class="nome-pessoa">Ana Souza</p>
+                            <p class="func-pessoa">Marketing Manager</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="feedback-message">
-                    <textarea name="feedback" placeholder="Deixe sua mensagem aqui"></textarea>                   
+                <!--slide 4-->
+                <div class="slides swiper-slide">
+                    <i class="bi bi-quote"></i>
+                    <p class="depoi-texto">Serviço de primeira qualidade!
+                    Já viajei algumas vezes com a Destinos Incríveis, e eles sempre me surpreendem com o atendimento e o cuidado nos detalhes. A viagem foi tranquila e tudo correu como planejado. Super recomendo!</p>
+                    <div class="pessoa">
+                        <img src="./img/ana.png" alt="pessoa">
+                        <div class="info-pessoa">
+                            <p class="nome-pessoa">Beatriz Santos</p>
+                            <p class="func-pessoa">Advogada</p>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <div class="swiper-button-next nav-btn"></div>
+            <div class="swiper-button-prev nav-btn"></div>
+            <div class="swiper-pagination nav-btn"></div>
+        </section>
+    </main>
+    <!-- Seção de Avaliação -->
+    <div class="feedback-section">
+        <h2>Viajou com a gente? <br> Avalie-nos!</h2>
+        <h4>Conecte com sua conta e deixe sua avaliação :)</h4>
 
-                <button type="button" id="submitReview">Enviar</button>
-            </form>    
-        </div>
+        <form id="formulario">
+            <div class="rating-stars">
+                <input type="radio" id="star5" name="estrela" value="5">
+                <label for="star5">★</label>
+                <input type="radio" id="star4" name="estrela" value="4">
+                <label for="star4">★</label>
+                <input type="radio" id="star3" name="estrela" value="3">
+                <label for="star3">★</label>
+                <input type="radio" id="star2" name="estrela" value="2">
+                <label for="star2">★</label>
+                <input type="radio" id="star1" name="estrela" value="1">
+                <label for="star1">★</label>
+            </div>
+            <div class="feedback-message">
+                <textarea name="feedback" placeholder="Deixe sua mensagem aqui"></textarea>
+            </div>
+
+            <button type="button" id="botao-enviar">Enviar</button>
+        </form>
     </div>
-    
-    
+
     <footer class="footer">
         <div class="footer-content">
 
@@ -126,32 +162,28 @@
         <div class="copyright">
             <p>Copyright © 2024 Destinos Incríveis | Desenvolvido pelo Grupo 3 - TC31</p>
         </div>
-    </footer>  
-    
-    
+    </footer>
     <!-- Script JavaScript -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
     <script>
-        document.getElementById('reviewForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Evita o envio padrão do formulário
-            const form = document.getElementById('reviewForm');
-            const formData = new FormData(form);
-            
-            // Enviar dados com fetch
-            fetch('enviar_avaliacao.php', {
-                method: 'POST',
-                body: formData
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    alert('Avaliação enviada com sucesso!');
-                } else {
-                    alert('Ocorreu um erro ao enviar a avaliação.');
-                }
-            })
-            .catch(error => console.error('Erro:', error));
+        document.getElementById('botao-enviar').addEventListener('click', function() {
+            // Obtém a avaliação selecionada
+            const estrela = document.querySelector('input[name="estrela"]:checked');
+            // Obtém o feedback 
+            const feedback = document.querySelector('textarea[name="feedback"]').value;
+    
+            if (!estrela || feedback.trim() === "") {
+                alert("Por favor, preencha todos os campos antes de enviar.");
+            } else {
+                // Aqui, você pode enviar os dados ou apenas exibir a mensagem de confirmação
+                alert("Obrigado por sua avaliação! Seu feedback foi enviado com sucesso.");
+                
+                // Limpa o formulário após enviar
+                document.getElementById('formulario').reset();
+            }
         });
-        </script>
+    </script>
     
 </body>
 </html>
