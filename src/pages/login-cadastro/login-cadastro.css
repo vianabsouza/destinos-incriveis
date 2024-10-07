@@ -19,9 +19,14 @@ span{
     display:none;
 }
 
+ul{
+    display:none;
+}
+
 .disabled{
     display: none !important;
 }
+
 label{
     display:flex;
     justify-content: space-between;
@@ -124,11 +129,38 @@ input{
     text-align: left;
 }
 
-.rememberMeBtn{
+
+.passwordInstructionsHelper{
+    display:block;
+    margin:5px 0 0 20%;
+    padding: 0;
+    list-style-type:none;
+}
+
+.passwordInstructionsHelper li{
     display:inline-flex;
     align-items: center;
+    gap:5px;
+     
+}
+
+.correctIcon{
+    width:5%;
+    height: 5%;
+}
+
+.wrongIcon{
+    width:5%;
+    height: 5%;
+
+    color:red;
+}
+
+.rememberMeBtn{
+    display:inline-flex;
     margin-top: 5px;
     margin-bottom: 3%;
+    justify-content:space-between;
 }
 
 .form .rememberMeBtn input[type="checkbox"]{
@@ -185,6 +217,10 @@ input{
     color:#fff;
     font-weight:700;
     cursor:pointer;
+}
+
+.submitButton button:hover{
+    background-color:#062658 ;
 }
 
 .or{
@@ -328,7 +364,7 @@ main {
     font-style: italic;
   }
 
-  .required-popup {
+.required-popup {
     color: red;
     font-size: .75rem;
     display: inline;
