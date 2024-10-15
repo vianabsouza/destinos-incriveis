@@ -1,11 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
 
   const dropdownBtn = document.querySelector(".dropdown-btn");
-  const userMenu = document.querySelector(".user-menu");
-  
-  dropdownBtn.addEventListener("click", function() {
-    userMenu.classList.toggle("open");
-  });
 
   const ofertasBtn = document.querySelector(".btn");
   
