@@ -1,8 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-
-  const dropdownBtn = document.querySelector(".dropdown-btn");
-
-  const ofertasBtn = document.querySelector(".btn");
   
   ofertasBtn.addEventListener("click", function() {
     window.location.href = "./src/pages/promocoes/promocoes.html";
