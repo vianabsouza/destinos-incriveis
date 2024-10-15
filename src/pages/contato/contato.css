@@ -168,9 +168,15 @@
     width: 100%;
     padding: 10px; 
     margin-bottom: 15px; 
-    border: 1px solid #ccc; 
+    /* border: 1px solid #ccc;  */
     border-radius: 4px; 
-    font-size: 10px; 
+    font-size: 15px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .form-container button[type="submit"] {
@@ -190,6 +196,34 @@
 .form-container button[type="submit"]:hover {
     background-color: aqua;
     color: #000;
+}
+.form-control.success input {
+    border: 3px solid #2bab2d;
+}
+
+.form-control.error input {
+    border: 3px solid #d24d14;
+}
+
+.form-control.success .icn-success {
+    visibility: visible;
+}
+
+.form-control.error .icn-error {
+    visibility: visible;
+}
+
+.form-control i {
+    visibility: hidden;
+    padding: 0;
+}
+
+.form-control small {
+    visibility: hidden;
+    font-size: 14px;
+    font-family: var(--fontTitle1);
+    color: #d24d14;
+    padding-top: 0;
 }
 
 .local-container {
