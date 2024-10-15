@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link rel="stylesheet" href="../contato/contato.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header class="navbar">
@@ -13,7 +14,7 @@
         </div>
         <nav class="nav-links">
           <a href="/index.html">Inicio</a>
-          <a href="/src/pages/quem-somos/quem-somos.html">Quem somos</a>
+          <a href="../quem-somos/quem-somos.html">Quem somos</a>
           <a href="/src/pages/voos/voos.html">Voos</a>
           <a href="/src/pages/promocoes/promocoes.html">Promoções</a>
           <a href="/src/pages/reviews/reviews.html">Reviews</a>
@@ -84,17 +85,37 @@
                 <h2>Precisa de ajuda? Preencha seus dados e fale conosco!</h2>
                 <form class="form-container">
                     <h4>Cadastre-se</h4>
-                    <label>Nome</label>
-                    <input type="text">
+                    <div class="form-control">
+                        <label for="username">Nome</label>
+                        <input type="text" id="username">
+                        <i class="fa-solid fa-circle-exclamation icn-error" style="color: #d24d14;"></i>
+                        <i class="fa-solid fa-square-check icn-sucess" style="color: #2bab2d;"></i>
+                        <small>Mensagem de Erro</small>
+                    </div>                    
                     
-                    <label>Email</label>
-                    <input type="email">
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                        <i class="fa-solid fa-circle-exclamation icn-error" style="color: #d24d14;"></i>
+                        <i class="fa-solid fa-square-check icn-sucess" style="color: #2bab2d;"></i>
+                        <small>Mensagem de Erro</small>
+                    </div>
 
-                    <label>Telefone</label>
-                    <input type="number">
+                    <div class="form-control">
+                        <label for="number-contact">Telefone</label>
+                        <input type="number" id="number-contact">
+                        <i class="fa-solid fa-circle-exclamation icn-error" style="color: #d24d14;"></i>
+                        <i class="fa-solid fa-square-check icn-sucess" style="color: #2bab2d;"></i>
+                        <small>Mensagem de Erro</small>
+                    </div>
 
-                    <label>Mensagem</label>
-                    <input type="text">
+                    <div class="form-control">
+                        <label for="text-contact">Mensagem</label>
+                        <input type="text" id="text-contact">
+                        <i class="fa-solid fa-circle-exclamation icn-error" style="color: #d24d14;"></i>
+                        <i class="fa-solid fa-square-check icn-sucess" style="color: #2bab2d;"></i>
+                        <small>Mensagem de Erro</small>
+                    </div>       
 
                     <button type="submit">Enviar</button>
                 </form>
@@ -138,5 +159,7 @@
           <p>Copyright © 2024 Destinos Incríveis | Desenvolvido pelo Grupo 3 - TC31</p>
         </div>
       </footer>
+
+    <script src="contato.js"></script>
 </body>
 </html>
