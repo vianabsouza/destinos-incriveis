@@ -15,14 +15,28 @@ main{
     flex-direction: column;
     margin-top: 2%;
 }
+span{
+    display:none;
+}
+
+ul{
+    display:none;
+}
 
 .disabled{
     display: none !important;
 }
 
-input, label{
+label{
+    display:flex;
+    justify-content: space-between;
+}
+
+input{
     display: block;
 }
+
+
 
 .logo{
     margin-bottom: -40px;
@@ -115,11 +129,38 @@ input, label{
     text-align: left;
 }
 
-.rememberMeBtn{
+
+.passwordInstructionsHelper{
+    display:block;
+    margin:5px 0 0 20%;
+    padding: 0;
+    list-style-type:none;
+}
+
+.passwordInstructionsHelper li{
     display:inline-flex;
     align-items: center;
+    gap:5px;
+     
+}
+
+.correctIcon{
+    width:5%;
+    height: 5%;
+}
+
+.wrongIcon{
+    width:5%;
+    height: 5%;
+
+    color:red;
+}
+
+.rememberMeBtn{
+    display:inline-flex;
     margin-top: 5px;
     margin-bottom: 3%;
+    justify-content:space-between;
 }
 
 .form .rememberMeBtn input[type="checkbox"]{
@@ -178,6 +219,10 @@ input, label{
     cursor:pointer;
 }
 
+.submitButton button:hover{
+    background-color:#062658 ;
+}
+
 .or{
     display: inline-flex;
     align-items: center;
@@ -234,7 +279,7 @@ input, label{
     justify-content:center;
   }
   
-  .footer-content {
+.footer-content {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
@@ -243,34 +288,34 @@ input, label{
     gap:20px;
   }
 
-  .footer-content-row{
+.footer-content-row{
     display: flex;
     flex-direction: row;
     gap: 30vw;
   }
   
   /* Estilo para os textos do footer */
-  .footer h3 {
+.footer h3 {
     margin-bottom: 10px;
     font-size: 1.2em;
   }
   
   /* Estilo para os ícones sociais e de contato */
-  .social-icons img, 
-  .contact-icons img {
+.social-icons img, 
+.contact-icons img {
     width: 50px;
     height: 50px;
     margin: 0 10px;
     transition: transform 0.3s ease;
   }
   
-  .social-icons img:hover, 
-  .contact-icons img:hover {
+.social-icons img:hover, 
+.contact-icons img:hover {
     transform: scale(1.2);
   }
   
   /* Estilo do copyright */
-  .copyright {
+.copyright {
     background-color: #003a74;
     padding: 10px 0;
     font-size: 0.9em;
@@ -278,38 +323,67 @@ input, label{
   }
   
   /* Tornar responsivo para telas menores */
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .footer-content {
         flex-direction: column;
     }
   }
   
   /* Estilos gerais */
-  html, body {
+html, body {
     height: 100%;
     margin: 0;
     padding: 0;
   }
   
   /* Garante que o footer fique no final da página */
-  body {
+body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
   }
   
   /* O conteúdo principal da página deve ocupar o espaço restante */
-  main {
+main {
     flex: 1;
   }
   
   /* Tornar os ícones brancos */
-  .social-icons img,
-  .contact-icons img {
+.social-icons img,
+.contact-icons img {
       filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(360deg) brightness(100%) contrast(100%);
   }
+
   
-  /* Efeito de hover (cor amarela ao passar o mouse) */
-  
+/* Validação de Formulários */
+.helper-text {
+    display: none;
+    font-size: .8rem;
+    color: darkred;
+    margin-top: 2px;
+    font-style: italic;
+  }
+
+.required-popup {
+    color: red;
+    font-size: .75rem;
+    display: inline;
+  }
+
+input.error {
+  border: solid 2px #992020;
+  background-color: #CCBBBB;
+  color: #662020;
+}
+
+input.correct {
+  background-color: #BBCCBB;
+  border: solid 2px #206620;
+  color: #206620;
+}
+
+.visible {
+  display: block;
+}  
   
   

@@ -89,7 +89,7 @@
         }
 
         .tela {
-          background-image: url(/destinos-incriveis/src/img/home/tela.png);
+          background-image: url(./src/img/home/tela.png);
           background-size: cover;
           background-position: center;
           padding: 50px 0;
@@ -253,7 +253,7 @@
         }
 
         .veja{
-            background-image: url(/destinos-incriveis/src/img/home/QUEM\ SOMOS1.png);
+            background-image: url(./src/img/home/QUEM\ SOMOS1.png);
             background-size: cover;
             background-position: center -200px;
             padding: 350px ;

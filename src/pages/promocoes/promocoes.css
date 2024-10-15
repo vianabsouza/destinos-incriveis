@@ -180,6 +180,7 @@ h2 {
 }
 
 .contact-link {
+  margin: 112px 0 20px;
   text-decoration: none;
 }
 
@@ -198,4 +199,39 @@ h2 {
   font-weight: bold;
   margin: 0 auto 100px;
   padding: 33px 130px;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.carousel-indicator {
+  background-color: var(--light-silver);
+  border: 1px solid var(--black);
+  border-radius: 50%;
+  cursor: pointer;
+  height: 15px;
+  margin: 0 5px;
+  width: 15px;
+}
+
+.active-indicator {
+  background-color: var(--black);
+}
+
+.carousel-container {
+  display: flex;
+  overflow-x: auto; /* Permite a rolagem horizontal */
+  scroll-behavior: smooth; /* Faz a rolagem suave */
+  transition: scroll-left 1s ease; /* Transição suave ao rolar */
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }

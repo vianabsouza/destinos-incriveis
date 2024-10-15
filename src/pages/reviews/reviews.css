@@ -29,44 +29,59 @@ h1 {
     margin-top: 60px;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-.review-carousel {
+.corpo{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.depoimentos {
+    width: 100%; /* Ajusta para 100% para se adequar à tela */
+    padding: 50px 20px;
+    max-width: 900px; /* Define uma largura máxima */
     position: relative;
-    max-width: 600px; /* Ajuste a largura máxima do carrossel */
-    margin: 50px auto; /* Centraliza o carrossel na página */
-    overflow: hidden; /* Oculta o conteúdo fora do carrossel */
-    border: 1px solid #ccc; /* Opcional: borda para o carrossel */
-    border-radius: 8px; /* Opcional: bordas arredondadas */
+    overflow:hidden;
 }
-.slides {
+.depoimentos .slides{
+    padding: 40px 60px;
+    cursor: grab;
+}
+.depoimentos .slides:active{
+    cursor: grabbing;
+}
+.depoimentos i{
+    font-size: 90px;
+    color:#e1dede;
+}
+.depoimentos .depoi-texto{
+    font-weight: 300px;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+.slides .pessoa{
     display: flex;
-    transition: transform 0.5s ease; /* Animação ao mudar de slide */
+    align-items: center;
+    gap:20px;
+}
+.slides .pessoa img{
+    width: 80px;
+    height: 80px;
+}
+.slides .pessoa p.nome-pessoa{
+    font-size: 18px;
+    font-weight: 600;
+}
+.slides .pessoa p.func-pessoa{
+    font-size: 14px;
 }
 
-.slide {
-    min-width: 100%; /* Cada slide ocupa 100% da largura do carrossel */
-    box-sizing: border-box;
-    padding: 20px; /* Ajuste o padding conforme necessário */
-}
+@media screen and (max-width: 768px){
+    .nav-btn{
+        display: none;
+    }
 
-.controls {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
 }
-
-.control {
-    background-color: rgba(255, 255, 255, 0.7); /* Fundo dos botões */
-    border: none;
-    cursor: pointer;
-    font-size: 24px; /* Tamanho dos ícones */
-    padding: 10px;
-    border-radius: 50%; /* Botões arredondados */
-}
-
+    
 .feedback-section {
     max-width: 600px; /* Largura máxima da seção */
     margin: 60px auto; /* Centraliza a seção */
