@@ -163,7 +163,7 @@ SELECT * FROM voo WHERE id_local_destino = 4;
 SELECT compra.data_compra, compra.valor, usuario.nome
 FROM compra
 INNER JOIN usuario
-ON compra.fk_id_usuario = usuarios.id_usuario;
+ON compra.fk_id_usuario = usuario.id_usuario;
 
 -- Retorna os usuários e quais promoções eles compraram
 SELECT usuario.nome, promocao.descricao
