@@ -181,3 +181,35 @@ ON review.fk_id_usuario = usuario.id_usuario;
 SELECT usuario.*, compra.*
 FROM usuario
 LEFT JOIN compra ON usuario.id_usuario = compra.fk_id_usuario;
+
+-- Retorna as promoções que tiveram maior desconto
+SELECT descricao, desconto
+FROM promocao
+ORDER BY desconto DESC;
+
+-- Retorna os voos que ocorreram entre duas datas específicas
+SELECT nome, data, horario
+FROM voo
+WHERE data BETWEEN '2024-11-01' AND '2024-12-31';
+
+-- Retorna os usuários que não fizeram nenhuma compra
+SELECT usuario.nome, usuario.sobrenome
+FROM usuario
+LEFT JOIN compra ON usuario.id_usuario = compra.fk_id_usuario
+WHERE compra.id_compra IS NULL;
+
+-- Retorna a quantidade de compras feitas por cada usuário
+SELECT usuario.nome, usuario.sobrenome, COUNT(compra.id_compra) AS total_compras
+FROM usuario
+LEFT JOIN compra ON usuario.id_usuario = compra.fk_id_usuario
+GROUP BY usuario.nome, usuario.sobrenome;
+
+-- Verifique os voos com destino ao "Aeroporto D"
+SELECT * FROM voo
+WHERE id_local_destino = 4;
+
+-- Retorna os voos que ainda têm vagas disponíveis (assumindo que já existem reservas):
+SELECT voo.nome, voo.num_max_pessoas - COALESCE(SUM(compra.id_compra), 0) AS vagas_disponiveis
+FROM voo
+LEFT JOIN compra ON voo.id_voo = compra.fk_id_voo
+GROUP BY voo.nome, voo.num_max_pessoas;
