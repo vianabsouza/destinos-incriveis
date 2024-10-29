@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
 }
 /* Contêiner para imagem e texto sobreposto */
 .imagem-container {
@@ -41,7 +42,7 @@
     margin-bottom: 60px;
 }
 .texto-container .texto-voos{
-    font-family: Arial, sans-serif ;
+    font-family: "Red Hat Display", sans-serif;
     margin: 10px 0;
     font-size: 1.3em;
     font-weight: bold;
