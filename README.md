@@ -28,7 +28,7 @@ cd destinos-incriveis
 Abra o arquivo ```index.html``` no seu navegador para visualizar o site.
 
 ## Deploy
-Disponível na Vercel: [Destinos Incríveis](destinos-incriveis.vercel.app).
+Disponível na Vercel: [Destinos Incríveis](https://destinos-incriveis.vercel.app/).
 
 ## Autores
 <table>
