@@ -9,7 +9,7 @@
 Nosso objetivo é proporcionar aos clientes uma plataforma de viagens que ofereça mais liberdade e opções de escolha no mercado. A inspiração para este projeto surgiu após um incidente envolvendo uma empresa conhecida do setor, que suspendeu pacotes previamente vendidos, causando frustração e desconfiança entre os consumidores. Com isso em mente, estamos comprometidos em mostrar que somos uma empresa séria e confiável, dedicada a não decepcionar nossos clientes, garantindo que suas expectativas sejam atendidas com transparência e responsabilidade.
 
 ## Layout
-Disponível no [Figma](https://www.figma.com/design/Ao87X101ymlK1gSCh9yVBu/Grupo-3---Design-Agencia-Viagens?node-id=4-4&node-type=canvas&t=1OQPB5WyikXkJ7VI-0)
+Disponível no [Figma](https://www.figma.com/design/Ao87X101ymlK1gSCh9yVBu/Grupo-3---Design-Agencia-Viagens?node-id=4-4&node-type=canvas&t=1OQPB5WyikXkJ7VI-0).
 
 ## Tecnologias
 [![Tecnologias](https://skillicons.dev/icons?i=figma,html,css,js,git)](https://skillicons.dev)
@@ -26,6 +26,9 @@ cd destinos-incriveis
 ```
 
 Abra o arquivo ```index.html``` no seu navegador para visualizar o site.
+
+## Deploy
+Disponível na Vercel: [Destinos Incríveis](destinos-incriveis.vercel.app).
 
 ## Autores
 <table>
